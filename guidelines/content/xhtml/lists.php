@@ -1,0 +1,156 @@
+<?php include_once('../../includes/xml-declaration.php'); ?>
+<?php $id='xhtm050'; $nav=1; $nav_items=array( 'exes','reqs','res','faq'); $category='xhtml'; $page_name='Lists'; ?>
+<!DOCTYPE html>
+<html xml:lang="en" lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:epub="http://www.idpf.org/2007/ops">
+	
+	<head>
+		<?php include_once('../../includes/title.php'); ?>
+		<?php include_once('../../includes/html5-shiv.php'); ?>
+		<link type="text/css" rel="stylesheet" href="../../css/epub3.css"/>
+		<?php include_once('../../includes/js.php'); ?> 
+	</head>
+	
+	<body>
+		<?php include_once('../../includes/header.php'); ?>
+		
+		<section id="xhtm050" class="section">
+			<?php include_once('../../includes/page-title.php'); ?>
+			
+			<section id="xhtm050-desc" class="usage">
+				<p>Lists are often overlooked as an accessibility feature, but the ability to move quickly and effectively
+					through long lists of data points is a key reading need. Unfortunately, it's often the case in ebook 
+					production that many lists are rendered as anything but proper HTML (e.g., using a new paragraph for each item, 
+					using manual line breaks to separate entries, etc.).</p>
+				
+				<p>Sighted readers rarely notice the advantage of being able to quickly skim a list, determine if it's of any 
+					interest and/or selectively read items. When a reader has to traverse every item in the list one item at a 
+					time to get to the end, or listen to the entire list from beginning to end, the problems of bad markup become 
+					more pronounced (see <a href="#xhtm050-faq">the faq section</a> for a deeper explanation of the problems). 
+					Properly tagging lists is a small measure that can greatly decrease reader frustration.</p>
+				
+				<p>In order to facilitate navigation of lists, always tag the items in the set using the appropriate ordered 
+					(<code>ol</code>) or unordered (<code>ul</code>) list element. Do not use <code>br</code> tags to visually
+					render items on separate lines, or use similar styling tricks to make the visual appearance 
+					of a list, as it will impede navigation.</p>
+				
+				<p>Using the correct list type is also important as it may be the only cue to the reader whether the order of 
+					items is significant. An alphabetical list is not necessarily an ordered list, for example; arranging items 
+					is not the same as assigning them a specific order. If you can re-arrange the items without changing the 
+					meaning of the list, you've defined an unordered list (e.g., indexes and bibliographies do not lose meaning
+					when re-ordered).</p>
+				
+				<p>The definition list (<code>dl</code>) element is for name/value lists. These can include 
+					dictionaries, glossaries, frequently asked questions and similar. The element
+					should not be used for character dialogue, as noted in the HTML5 specification. Repeating character names 
+					in <code>dt</code> elements purely to indicate who is speaking breaks this semantic. Although the automatic 
+					formatting that comes with the list type may fit certain formats, like plays, each <code>dt</code> element 
+					is meant to define a unique value.</p>
+				
+				<p>List elements must not be used for purely presentational purposes (e.g., using <code>dl</code>
+					lists to make bolded headings with indented paragraphs).</p>
+			</section>
+			
+			<section id="xhtm050-ex" class="example">
+				<h3>Examples</h3>
+				
+				<figure id="xhtm050-ex01">
+					<figcaption>Example 1 &#8212; Unordered list</figcaption>
+					<pre class="prettyprint linenums"><code>&lt;ul>
+   &lt;li>Credit, consumer, 164&lt;/li>
+   &lt;li>Cross-functional contact, 10-11&lt;/li>
+   &lt;li>Culture
+      &lt;ul>
+         &lt;li>buyer behavior and, 85&lt;/li>
+         &lt;li>defined, 85, 98, 118&lt;/li>
+         &#8230;
+      &lt;/ul>
+   &lt;/li>
+   &#8230;
+&lt;/ul></code></pre>
+					<p class="ack">Excerpt from: Core Concepts of Marketing &#8212; John Burnett</p>
+				</figure>
+				
+				<figure id="xhtm050-ex02">
+					<figcaption>Example 2 &#8212; Definition list</figcaption>
+					<pre class="prettyprint linenums"><code>&lt;dl>
+   &lt;dt>&lt;def>Exchange function&lt;/def>&lt;/dt>
+   &lt;dd>
+      Sales of the product to the various members 
+      of the channel of distribution.
+   &lt;/dd>
+   &lt;dt>&lt;def>Physical distribution function&lt;/def>&lt;/dt>
+   &lt;dd>
+      Moves the product through the exchange 
+      channel, along with title and ownership.
+   &lt;/dd>
+   &lt;dt>&lt;def>Marketing channel&lt;/def>&lt;/dt>
+   &lt;dd>
+      Sets of independent organizations involved
+      in the process of making a product or 
+      service available for use or consumption 
+      as well as providing a payment mechanism 
+      for the provider.
+   &lt;/dd>
+   &#8230;
+&lt;/dl></code></pre>
+					<p class="ack">Excerpt from: Core Concepts of Marketing &#8212; John Burnett</p>
+				</figure>
+			</section>
+			
+			<section id="xhtm050-reqs" class="reqs">
+				<h3>Compliance References and Standards</h3>
+				
+				<ul>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/grouping-content.html#the-ol-element">The <code>ol</code> element</a></li>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/grouping-content.html#the-ul-element">The <code>ul</code> element</a></li>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/grouping-content.html#the-dl-element">The <code>dl</code> element</a></li>
+					<li>WCAG 2.0 &#8212; <a href="http://www.w3.org/TR/WCAG20-TECHS/H40.html">H40: Using definition lists</a></li>
+					<li>WCAG 2.0 &#8212; <a href="http://www.w3.org/TR/WCAG20-TECHS/H48.html">H48: Using ol, ul and dl for lists or groups of links</a></li>
+				</ul>
+			</section>
+			
+			<section id="xhtm050-res" class="res">
+				<h3>Additional Resources</h3>
+				
+				<ul>
+					<li>CSS 2.1 &#8212; <a href="http://www.w3.org/TR/CSS2/generate.html#lists">12.5 Lists</a></li>
+				</ul>
+			</section>
+			
+			<section id="xhtm050-faq" class="faq">
+				<h3>Frequently Asked Questions</h3>
+				
+				<dl class="faq">
+					<dt id="xhtm050-faq01">Why can't I use a paragraph/div for each list item?</dt>
+					<dd><p>If you use paragraphs or divs, a reader using an assistive technology to navigate the document
+							will have to traverse every item one at a time in order to continue reading. The proper
+							use of lists allows these readers to easily skip past the entire list, and move through
+							and jump out of the list at any time.</p>
+						<p>Also, when using paragraphs, any hierarchical relationship is typically lost, as indenting
+							is emulated using CSS.</p>
+						<p>And finally, creating proper lists allows the reading system to announce the total number
+							of items in the list and the reader's current position as they navigate through, making it 
+							simpler for them to reference the location again should they need.</p>
+					</dd>
+					<dt id="xhtm050-faq02">Why can't I use <code>br</code> tags to create lists?</dt>
+					<dd><p>Print-first tools often generate lists like this (usually from bad formatting), where single 
+						paragraphs contain the entire list and each item is delineated by a hard line break 
+						(the <code>br</code> tag). Although this might seem to solve the problem of being able to quickly 
+						skip past or escape out of the list, it makes navigating the list quickly by item impossible. 
+						The reader now has to listen to every <q>item</q> in turn.</p>
+						<p>Using <code>br</code> tags also makes it difficult to return to a specific item, as there is no
+							way to navigate back to the text at a later time but to listen to the content again in full.</p>
+					</dd>
+					<dt id="xhtm050-faq03">I want to use a custom image for a bullet, can I ignore this rule?</dt>
+					<dd><p>No, for all the reasons above plus CSS has always allowed custom images to be defined
+						for list items without having to resort to the <code>img</code> element. See the CSS 
+						<code>list-style-image</code> property.</p></dd>
+				</dl>
+			</section>
+		</section>
+		
+		<?php include_once('../../includes/footer.php'); ?>
+	</body>
+</html>
