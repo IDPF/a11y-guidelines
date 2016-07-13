@@ -257,7 +257,7 @@
 				
 				<?php if ($show_all or ($_POST['annotations'] and ($priority['req'] or $priority['rec']))): ?>
 					<section id="xhtml-anno">
-						<h4><a href="../xhtml/notes.php">Annotations</a></h4>
+						<h4><a href="../xhtml/annotations.php">Annotations</a></h4>
 						<ul class="req">
 							<?php if (!isset($priority) or $priority['req']): ?><li id="M-XAN1">Annotations within the primary narrative identified using the <code>aside</code> element with an <code>epub:type</code> attribute with the value <code>annotation</code></li><?php endif; ?>
 							<?php if (!isset($priority) or $priority['rec']): ?><li id="M-XAN2">Inline annotations identified using the <code>ruby</code> element <abbr class="rec" title="Recommended">[R]</abbr></li><?php endif; ?>
