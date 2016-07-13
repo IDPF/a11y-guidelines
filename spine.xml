@@ -1,0 +1,72 @@
+<spine>
+	<itemref idref="nav"/>
+	<itemref idref="about" href="about.php">About this Guide</itemref>
+	<itemref idref="wai" href="wcag-aria.php">EPUB and Web Accessibility</itemref>
+	<itemref idref="sem005" href="semantics/epub-type.php">The epub:type attribute</itemref>
+	<itemref idref="sem010" href="semantics/order.php">Logical Reading Order</itemref>
+	<itemref idref="sem015" href="semantics/separation.php">Separation of Style</itemref>
+	<!-- <itemref idref="xhtm005" href="xhtml/declarations.php">XML Declaration and HTML5 DOCTYPE</itemref> -->
+	<itemref idref="xhtm010" href="xhtml/lang.php">Language</itemref>
+	<!-- <itemref idref="xhtm015" href="xhtml/entities.php">Character Entities</itemref> -->
+	<itemref idref="xhtm020" href="xhtml/pagenum.php">Page Numbers</itemref>
+	<itemref idref="xhtm110" href="xhtml/iframes.php">Inline Frames</itemref>
+	<itemref idref="xhtm025" href="xhtml/works.php">Published Works</itemref>
+	<itemref idref="xhtm030" href="xhtml/toc.php">Table of Contents</itemref>
+	<itemref idref="xhtm035" href="xhtml/sections.php">Sections</itemref>
+	<itemref idref="xhtm040" href="xhtml/headings.php">Headings</itemref>
+	<itemref idref="xhtm042" href="xhtml/emphasis.php">Bolding and Italics</itemref>
+	<itemref idref="xhtm043" href="xhtml/links.php">Links</itemref>
+	<itemref idref="xhtm045" href="xhtml/tables.php">Tables</itemref>
+	<itemref idref="xhtm050" href="xhtml/lists.php">Lists</itemref>
+	<itemref idref="xhtm055" href="xhtml/figures.php">Figures</itemref>
+	<itemref idref="xhtm060" href="xhtml/images.php">Images</itemref>
+	<itemref idref="xhtm065" href="xhtml/descriptions.php">Descriptions</itemref>
+	<itemref idref="xhtm067" href="xhtml/maps.php">Image Maps</itemref>
+	<itemref idref="xhtm070" href="xhtml/audio.php">Audio</itemref>
+	<itemref idref="xhtm075" href="xhtml/video.php">Video</itemref>
+	<itemref idref="xhtm080" href="xhtml/notes.php">Notes</itemref>
+	<itemref idref="xhtm115" href="xhtml/annotations.php">Annotations</itemref>
+	<itemref idref="xhtm090" href="xhtml/context.php">Context Breaks</itemref>
+	<itemref idref="xhtm095" href="xhtml/biblio.php">Bibliographies</itemref>
+	<itemref idref="xhtm105" href="xhtml/indexes.php">Indexes</itemref>
+	<itemref idref="css005" href="style/color.php">Colors</itemref>
+	<itemref idref="css010" href="style/backgrounds.php">Background Images</itemref>
+	<itemref idref="css015" href="style/hidden.php">Hidden Content</itemref>
+	<itemref idref="css020" href="style/importance.php">Importance Rules</itemref>
+	<itemref idref="css025" href="style/reference.php">CSS Property Reference</itemref>
+	<itemref idref="svg005" href="svg/lang.php">Language</itemref>
+	<itemref idref="svg010" href="svg/desc.php">Titles and Descriptions</itemref>
+	<itemref idref="svg015" href="svg/components.php">Components</itemref>
+	<itemref idref="svg020" href="svg/text.php">Text Content</itemref>
+	<itemref idref="svg025" href="svg/linking.php">Linking</itemref>
+	<itemref idref="svg030" href="svg/css.php">Styling</itemref>
+	<itemref idref="svg035" href="svg/script.php">Interactivity</itemref>
+	<itemref idref="fixed005" href="fixed/xhtml.php">XHTML Fixed Layouts</itemref>
+	<itemref idref="fixed010" href="fixed/img.php">Image Fixed Layouts</itemref>
+	<itemref idref="math005" href="mathml/desc.php">Descriptions</itemref>
+	<itemref idref="nav005" href="nav/toc.php">Table of Contents</itemref>
+	<itemref idref="nav010" href="nav/landmarks.php">Landmarks</itemref>
+	<itemref idref="nav015" href="nav/pagelist.php">Page List</itemref>
+	<itemref idref="nav020" href="nav/loi.php">Lists of Illustrations</itemref>
+	<itemref idref="nav025" href="nav/lot.php">Lists of Tables</itemref>
+	<itemref idref="meta005" href="meta/onix.php">ONIX</itemref>
+	<itemref idref="meta010" href="meta/schema.org.php">Schema.org</itemref>
+	<itemref idref="mo005" href="overlays/overview.php">Media Overlays Overview</itemref>
+	<itemref idref="mo010" href="overlays/hilite.php">Highlighting</itemref>
+	<itemref idref="mo015" href="overlays/lists.php">Lists</itemref>
+	<itemref idref="mo020" href="overlays/tables.php">Tables</itemref>
+	<itemref idref="tts005" href="tts/overview.php">Text-to-Speech Overview</itemref>
+	<itemref idref="tts010" href="tts/pls.php">PLS Lexicons</itemref>
+	<itemref idref="tts015" href="tts/ssml.php">SSML</itemref>
+	<itemref idref="tts020" href="tts/speech.php">CSS3 Speech</itemref>
+	<itemref idref="sc005" href="script/pe.php">Progressive Enhancement</itemref>
+	<itemref idref="sc010" href="script/valid.php">Content Validity</itemref>
+	<itemref idref="sc015" href="script/aria.php">WAI-ARIA and Custom Controls</itemref>
+	<itemref idref="sc020" href="script/forms.php">Forms</itemref>
+	<itemref idref="sc025" href="script/regions.php">Live Regions</itemref>
+	<itemref idref="sc030" href="script/canvas.php">Canvas</itemref>
+	<itemref idref="s508" href="compliance/s508.php">Section 508 (US)</itemref>
+	<itemref idref="accesslist" href="qa/qa-checklist.php">QA Checklist</itemref>
+	<itemref idref="glossary" href="glossary.php">Glossary</itemref>
+	<itemref idref="rev" href="history.php">Revision History</itemref>
+</spine>
