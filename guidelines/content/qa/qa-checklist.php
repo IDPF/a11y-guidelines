@@ -429,7 +429,18 @@
 				<?php endif; ?>
 			</section>
 		<?php endif; ?>
-		
+	
+    	<?php if ($show_all or ($_POST['importance'] and $priority['req'])): ?>
+					<section id="css-importance">
+						<h4><a href="../style/importance.php">Importance</a></h4>
+						<ul class="req">
+							<?php if (!isset($priority) or $priority['req']): ?><li id="M-CH1">Importance can be overridden by CSS rules</li><?php endif; ?>
+						</ul>
+					</section>
+				<?php endif; ?>
+			</section>
+		<?php endif; ?>
+        
 		
 		<?php if ($show_all or ($_POST['fixed'] and $priority['req'])): ?>
 			<section id="markup-fixed">
