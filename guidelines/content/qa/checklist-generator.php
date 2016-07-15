@@ -124,6 +124,9 @@
 						<label for="hid">
 							<input type="checkbox" name="hid" id="hid"/> Hidden Content
 						</label>
+						<label for="importance">
+							<input type="checkbox" name="importance" id="importance"/> Importance
+						</label>
 					</fieldset>
 					<fieldset id="nav">
 						<legend>Navigation</legend>
