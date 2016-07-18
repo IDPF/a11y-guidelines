@@ -152,7 +152,6 @@
      id="result"
      aria-live="assertive"
      aria-atomic="true"
-     aria-hidden="true"
      hidden="hidden">
    Your answer is &lt;span id="q1-answer"/>!
 &lt;/div>
@@ -174,7 +173,6 @@ function checkAnswers() {
    
    var result = document.getElementById('result');
    
-   result.setAttribute('aria-hidden', 'false');
    result.removeAttribute('hidden');
 }
 
@@ -193,7 +191,7 @@ function checkAnswers() {
 						</div>
 						<input type="button" id="checkButton" value="Verify" disabled="disabled" aria-disabled="true" onclick="checkAnswers()"/>
 					</form>
-					<div id="result" aria-live="assertive" aria-atomic="true" aria-hidden="true" hidden="hidden">
+					<div id="result" aria-live="assertive" aria-atomic="true" hidden="hidden">
 						Your answer is <span id="q1-answer"></span>!
 					</div>
 					<script type="text/javascript">
@@ -224,7 +222,6 @@ function checkAnswers() {
 								q1ans.className = response;
 							
 							var result = document.getElementById('result');
-								result.setAttribute('aria-hidden', 'false');
 								result.removeAttribute('hidden');
 						}
 					]]>
