@@ -419,7 +419,7 @@
 				
 				<?php if ($show_all or ($_POST['hid'] and $priority['req'])): ?>
 					<section id="css-hiding">
-						<h4><a href="../style/importance.php">Hidden Content</a></h4>
+						<h4><a href="../style/hidden.php">Hidden Content</a></h4>
 						<ul class="req">
 							<?php if (!isset($priority) or $priority['req']): ?><li id="M-CH1">Content critical to the logical flow of a publication not initialized in a hidden state</li><?php endif; ?>
 							<?php if (!isset($priority) or $priority['req']): ?><li id="M-CH2">HTML5 and ARIA techniques used to include optional text and descriptions</li><?php endif; ?>
