@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <revisions><!-- add all new revisions to the top -->
+	<date date="2016-07-18">
+		<doc docid="site">
+			<rev>Removed page on CSS importance rules due to lack of implementable guidelines for content production.</rev>
+			<rev>Fixes links in QA checklist.</rev>
+		</doc>
+		<doc docid="sc025">
+			<rev>Removed redunant use of <code>aria-hidden</code> attribute from example.</rev>
+		</doc>
+	</date>
 	<date date="2015-10-12">
 		<doc docid="xhtm065">
 			<rev>Deleted <code>aria-describedat</code> as it has been removed from ARIA 1.1.</rev>
