@@ -26,7 +26,6 @@
 		<item id="img006" media-type="image/png" href="graphics/stop.png"/>
 		<item id="img007" media-type="image/png" href="graphics/stop-disabled.png"/>
 		<item id="img008" media-type="image/jpeg" href="graphics/order.jpg"/>
-		<item id="img009" media-type="image/jpeg" href="graphics/tex2res4sm.jpg"/>
 		<item id="img010" media-type="image/png" href="graphics/previous.png"/>
 		<item id="img011" media-type="image/png" href="graphics/next.png"/>
 		
@@ -84,7 +83,6 @@
 		<item id="css005" media-type="application/xhtml+xml" href="content/style/color.xhtml"/>
 		<item id="css010" media-type="application/xhtml+xml" href="content/style/backgrounds.xhtml" properties="scripted"/>
 		<item id="css015" media-type="application/xhtml+xml" href="content/style/hidden.xhtml" properties="scripted"/>
-		<item id="css020" media-type="application/xhtml+xml" href="content/style/importance.xhtml" properties="scripted"/>
 		<item id="css025" media-type="application/xhtml+xml" href="content/style/reference.xhtml"/>
 		
 		<item id="fixed005" media-type="application/xhtml+xml" href="content/fixed/xhtml.xhtml" properties="scripted"/>
@@ -116,5 +114,76 @@
 		<item id="sc025" media-type="application/xhtml+xml" href="content/script/regions.xhtml" properties="scripted"/>
 		<item id="sc030" media-type="application/xhtml+xml" href="content/script/canvas.xhtml" properties="scripted"/>
 	</manifest>
-	<spine/>
+	<spine>
+		<itemref idref="nav"/>
+		<itemref idref="about"/>
+		<itemref idref="wai"/>
+		<itemref idref="sem005"/>
+		<itemref idref="sem010"/>
+		<itemref idref="sem015"/>
+		<!-- <itemref idref="xhtm005"/> -->
+		<itemref idref="xhtm010"/>
+		<!-- <itemref idref="xhtm015"/> -->
+		<itemref idref="xhtm020"/>
+		<itemref idref="xhtm110"/>
+		<itemref idref="xhtm025"/>
+		<itemref idref="xhtm030"/>
+		<itemref idref="xhtm035"/>
+		<itemref idref="xhtm040"/>
+		<itemref idref="xhtm042"/>
+		<itemref idref="xhtm043"/>
+		<itemref idref="xhtm045"/>
+		<itemref idref="xhtm050"/>
+		<itemref idref="xhtm055"/>
+		<itemref idref="xhtm060"/>
+		<itemref idref="xhtm065"/>
+		<itemref idref="xhtm067"/>
+		<itemref idref="xhtm070"/>
+		<itemref idref="xhtm075"/>
+		<itemref idref="xhtm080"/>
+		<itemref idref="xhtm115"/>
+		<itemref idref="xhtm090"/>
+		<itemref idref="xhtm095"/>
+		<itemref idref="xhtm105"/>
+		<itemref idref="css005"/>
+		<itemref idref="css010"/>
+		<itemref idref="css015"/>
+		<!-- <itemref idref="css020"/> -->
+		<itemref idref="css025"/>
+		<itemref idref="svg005"/>
+		<itemref idref="svg010"/>
+		<itemref idref="svg015"/>
+		<itemref idref="svg020"/>
+		<itemref idref="svg025"/>
+		<itemref idref="svg030"/>
+		<itemref idref="svg035"/>
+		<itemref idref="fixed005"/>
+		<itemref idref="fixed010"/>
+		<itemref idref="math005"/>
+		<itemref idref="nav005"/>
+		<itemref idref="nav010"/>
+		<itemref idref="nav015"/>
+		<itemref idref="nav020"/>
+		<itemref idref="nav025"/>
+		<itemref idref="meta005"/>
+		<itemref idref="meta010"/>
+		<itemref idref="mo005"/>
+		<itemref idref="mo010"/>
+		<itemref idref="mo015"/>
+		<itemref idref="mo020"/>
+		<itemref idref="tts005"/>
+		<itemref idref="tts010"/>
+		<itemref idref="tts015"/>
+		<itemref idref="tts020"/>
+		<itemref idref="sc005"/>
+		<itemref idref="sc010"/>
+		<itemref idref="sc015"/>
+		<itemref idref="sc020"/>
+		<itemref idref="sc025"/>
+		<itemref idref="sc030"/>
+		<itemref idref="s508"/>
+		<itemref idref="accesslist"/>
+		<itemref idref="glossary"/>
+		<itemref idref="rev"/>
+	</spine>
 </package>

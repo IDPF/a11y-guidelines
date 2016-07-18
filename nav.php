@@ -111,7 +111,6 @@
 						<li id="css-color"><a href="content/style/color.php">Colors</a></li>
 						<li id="css-backgrounds"><a href="content/style/backgrounds.php">Background Images</a></li>
 						<li id="css-hidden"><a href="content/style/hidden.php">Hidden Content</a></li>
-						<li id="css-importance"><a href="content/style/importance.php">Importance Rules</a></li>
 						<li id="css-ref"><a href="content/style/reference.php">CSS Property Reference</a></li>
 					</ol>
 				</li>
