@@ -49,7 +49,7 @@
 					When this is not possible, attach an <code>aria-describedby</code> attribute to the control identifying
 					the element containing the additional instructions:</p>
 				
-				<pre class="prettyprint linenums"><code>&lt;label for="username-label">User name:&lt;/label>
+				<pre class="prettyprint linenums"><code>&lt;label for="uname">User name:&lt;/label>
 
 &lt;input type="text"
        id="uname"
