@@ -76,3 +76,18 @@ fieldset {
 	width: 37em;
 	margin-top: 1em;
 }
+
+aside.note {
+    margin-top: 1em;
+    margin-left: 2em;
+    border-left: 4px solid rgb(180,0,0);
+}
+
+aside.note > h3 {
+    color: rgb(90,0,0);
+    font-size: 110%;
+}
+
+aside.note > * {
+    margin-left: 1em;
+}
