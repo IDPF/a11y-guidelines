@@ -26,93 +26,91 @@
 		<item id="img006" media-type="image/png" href="graphics/stop.png"/>
 		<item id="img007" media-type="image/png" href="graphics/stop-disabled.png"/>
 		<item id="img008" media-type="image/jpeg" href="graphics/order.jpg"/>
-		<item id="img010" media-type="image/png" href="graphics/previous.png"/>
-		<item id="img011" media-type="image/png" href="graphics/next.png"/>
+		<item id="img009" media-type="image/gif" href="graphics/epub-logo-2.gif"/>
 		
-		<item id="nav" media-type="application/xhtml+xml" href="nav.xhtml" properties="nav"/>
+		<item id="nav" media-type="application/xhtml+xml" href="index.html" properties="nav"/>
 		
-		<item id="about" media-type="application/xhtml+xml" href="content/about.xhtml"/>
-		<item id="wai" media-type="application/xhtml+xml" href="content/wcag-aria.xhtml"/>
-		<item id="glossary" media-type="application/xhtml+xml" href="content/glossary.xhtml"/>
-		<item id="rev" media-type="application/xhtml+xml" href="content/history.xhtml"/>
+		<item id="about" media-type="application/xhtml+xml" href="content/about.html"/>
+		<item id="wai" media-type="application/xhtml+xml" href="content/wcag-aria.html"/>
+		<item id="glossary" media-type="application/xhtml+xml" href="content/glossary.html"/>
 		
-		<item id="accesslist" media-type="application/xhtml+xml" href="content/qa/qa-checklist.xhtml"/>
-		<item id="s508" media-type="application/xhtml+xml" href="content/compliance/s508.xhtml"/>
+		<item id="accesslist" media-type="application/xhtml+xml" href="content/qa/qa-checklist.html"/>
+		<item id="s508" media-type="application/xhtml+xml" href="content/conformance/s508.html"/>
 		
-		<item id="sem005" media-type="application/xhtml+xml" href="content/semantics/epub-type.xhtml" properties="scripted"/>
-		<item id="sem010" media-type="application/xhtml+xml" href="content/semantics/order.xhtml" properties="scripted"/>
-		<item id="sem015" media-type="application/xhtml+xml" href="content/semantics/separation.xhtml" properties="scripted"/>
+		<item id="sem005" media-type="application/xhtml+xml" href="content/semantics/epub-type.html" properties="scripted"/>
+		<item id="sem010" media-type="application/xhtml+xml" href="content/semantics/order.html" properties="scripted"/>
+		<item id="sem015" media-type="application/xhtml+xml" href="content/semantics/separation.html" properties="scripted"/>
 		
-		<item id="xhtm010" media-type="application/xhtml+xml" href="content/xhtml/lang.xhtml" properties="scripted"/>
-		<item id="xhtm020" media-type="application/xhtml+xml" href="content/xhtml/pagenum.xhtml" properties="scripted"/>
-		<item id="xhtm110" media-type="application/xhtml+xml" href="content/xhtml/iframes.xhtml" properties="scripted"/>
+		<item id="xhtm010" media-type="application/xhtml+xml" href="content/xhtml/lang.html" properties="scripted"/>
+		<item id="xhtm020" media-type="application/xhtml+xml" href="content/xhtml/pagenum.html" properties="scripted"/>
+		<item id="xhtm110" media-type="application/xhtml+xml" href="content/xhtml/iframes.html" properties="scripted"/>
 		
-		<item id="xhtm025" media-type="application/xhtml+xml" href="content/xhtml/works.xhtml" properties="scripted"/>
-		<item id="xhtm030" media-type="application/xhtml+xml" href="content/xhtml/toc.xhtml" properties="scripted"/>
+		<item id="xhtm025" media-type="application/xhtml+xml" href="content/xhtml/works.html" properties="scripted"/>
+		<item id="xhtm030" media-type="application/xhtml+xml" href="content/xhtml/toc.html" properties="scripted"/>
 		
-		<item id="xhtm035" media-type="application/xhtml+xml" href="content/xhtml/sections.xhtml" properties="scripted"/>
-		<item id="xhtm040" media-type="application/xhtml+xml" href="content/xhtml/headings.xhtml" properties="scripted"/>
-		<item id="xhtm042" media-type="application/xhtml+xml" href="content/xhtml/emphasis.xhtml" properties="scripted"/>
-		<item id="xhtm043" media-type="application/xhtml+xml" href="content/xhtml/links.xhtml" properties="scripted"/>
-		<item id="xhtm045" media-type="application/xhtml+xml" href="content/xhtml/tables.xhtml" properties="scripted"/>
-		<item id="xhtm050" media-type="application/xhtml+xml" href="content/xhtml/lists.xhtml" properties="scripted"/>
-		<item id="xhtm055" media-type="application/xhtml+xml" href="content/xhtml/descriptions.xhtml" properties="scripted"/>
-		<item id="xhtm060" media-type="application/xhtml+xml" href="content/xhtml/figures.xhtml" properties="scripted"/>
-		<item id="xhtm065" media-type="application/xhtml+xml" href="content/xhtml/images.xhtml" properties="scripted"/>
-		<item id="xhtm067" media-type="application/xhtml+xml" href="content/xhtml/maps.xhtml" properties="scripted"/>
-		<item id="xhtm070" media-type="application/xhtml+xml" href="content/xhtml/audio.xhtml" properties="scripted"/>
-		<item id="xhtm075" media-type="application/xhtml+xml" href="content/xhtml/video.xhtml" properties="scripted"/>
-		<item id="xhtm080" media-type="application/xhtml+xml" href="content/xhtml/notes.xhtml" properties="scripted"/>
-		<item id="xhtm115" media-type="application/xhtml+xml" href="content/xhtml/annotations.xhtml" properties="scripted"/>
-		<item id="xhtm085" media-type="application/xhtml+xml" href="content/xhtml/code.xhtml" properties="scripted"/>
-		<item id="xhtm090" media-type="application/xhtml+xml" href="content/xhtml/context.xhtml" properties="scripted"/>
+		<item id="xhtm035" media-type="application/xhtml+xml" href="content/xhtml/sections.html" properties="scripted"/>
+		<item id="xhtm040" media-type="application/xhtml+xml" href="content/xhtml/headings.html" properties="scripted"/>
+		<item id="xhtm042" media-type="application/xhtml+xml" href="content/xhtml/emphasis.html" properties="scripted"/>
+		<item id="xhtm043" media-type="application/xhtml+xml" href="content/xhtml/links.html" properties="scripted"/>
+		<item id="xhtm045" media-type="application/xhtml+xml" href="content/xhtml/tables.html" properties="scripted"/>
+		<item id="xhtm050" media-type="application/xhtml+xml" href="content/xhtml/lists.html" properties="scripted"/>
+		<item id="xhtm055" media-type="application/xhtml+xml" href="content/xhtml/descriptions.html" properties="scripted"/>
+		<item id="xhtm060" media-type="application/xhtml+xml" href="content/xhtml/figures.html" properties="scripted"/>
+		<item id="xhtm065" media-type="application/xhtml+xml" href="content/xhtml/images.html" properties="scripted"/>
+		<item id="xhtm067" media-type="application/xhtml+xml" href="content/xhtml/maps.html" properties="scripted"/>
+		<item id="xhtm070" media-type="application/xhtml+xml" href="content/xhtml/audio.html" properties="scripted"/>
+		<item id="xhtm075" media-type="application/xhtml+xml" href="content/xhtml/video.html" properties="scripted"/>
+		<item id="xhtm080" media-type="application/xhtml+xml" href="content/xhtml/notes.html" properties="scripted"/>
+		<item id="xhtm115" media-type="application/xhtml+xml" href="content/xhtml/annotations.html" properties="scripted"/>
+		<item id="xhtm085" media-type="application/xhtml+xml" href="content/xhtml/code.html" properties="scripted"/>
+		<item id="xhtm090" media-type="application/xhtml+xml" href="content/xhtml/context.html" properties="scripted"/>
 		
-		<item id="xhtm095" media-type="application/xhtml+xml" href="content/xhtml/biblio.xhtml" properties="scripted"/>
-		<item id="xhtm105" media-type="application/xhtml+xml" href="content/xhtml/indexes.xhtml" properties="scripted"/>
+		<item id="xhtm095" media-type="application/xhtml+xml" href="content/xhtml/biblio.html" properties="scripted"/>
+		<item id="xhtm105" media-type="application/xhtml+xml" href="content/xhtml/indexes.html" properties="scripted"/>
 		
-		<item id="math005" media-type="application/xhtml+xml" href="content/mathml/desc.xhtml" properties="scripted"/>
+		<item id="math005" media-type="application/xhtml+xml" href="content/mathml/desc.html" properties="scripted"/>
 		
-		<item id="svg005" media-type="application/xhtml+xml" href="content/svg/lang.xhtml" properties="scripted"/>
-		<item id="svg010" media-type="application/xhtml+xml" href="content/svg/desc.xhtml" properties="scripted"/>
-		<item id="svg015" media-type="application/xhtml+xml" href="content/svg/components.xhtml"/>
-		<item id="svg020" media-type="application/xhtml+xml" href="content/svg/text.xhtml"/>
-		<item id="svg025" media-type="application/xhtml+xml" href="content/svg/linking.xhtml" properties="scripted"/>
-		<item id="svg030" media-type="application/xhtml+xml" href="content/svg/css.xhtml"/>
-		<item id="svg035" media-type="application/xhtml+xml" href="content/svg/script.xhtml"/>
+		<item id="svg005" media-type="application/xhtml+xml" href="content/svg/lang.html" properties="scripted"/>
+		<item id="svg010" media-type="application/xhtml+xml" href="content/svg/desc.html" properties="scripted"/>
+		<item id="svg015" media-type="application/xhtml+xml" href="content/svg/components.html"/>
+		<item id="svg020" media-type="application/xhtml+xml" href="content/svg/text.html"/>
+		<item id="svg025" media-type="application/xhtml+xml" href="content/svg/linking.html" properties="scripted"/>
+		<item id="svg030" media-type="application/xhtml+xml" href="content/svg/css.html"/>
+		<item id="svg035" media-type="application/xhtml+xml" href="content/svg/script.html"/>
 		
-		<item id="css005" media-type="application/xhtml+xml" href="content/style/color.xhtml"/>
-		<item id="css010" media-type="application/xhtml+xml" href="content/style/backgrounds.xhtml" properties="scripted"/>
-		<item id="css015" media-type="application/xhtml+xml" href="content/style/hidden.xhtml" properties="scripted"/>
-		<item id="css025" media-type="application/xhtml+xml" href="content/style/reference.xhtml"/>
+		<item id="css005" media-type="application/xhtml+xml" href="content/style/color.html"/>
+		<item id="css010" media-type="application/xhtml+xml" href="content/style/backgrounds.html" properties="scripted"/>
+		<item id="css015" media-type="application/xhtml+xml" href="content/style/hidden.html" properties="scripted"/>
+		<item id="css025" media-type="application/xhtml+xml" href="content/style/reference.html"/>
 		
-		<item id="fixed005" media-type="application/xhtml+xml" href="content/fixed/xhtml.xhtml" properties="scripted"/>
-		<item id="fixed010" media-type="application/xhtml+xml" href="content/fixed/img.xhtml"/>
+		<item id="fixed005" media-type="application/xhtml+xml" href="content/fixed/xhtml.html" properties="scripted"/>
+		<item id="fixed010" media-type="application/xhtml+xml" href="content/fixed/img.html"/>
 		
-		<item id="nav005" media-type="application/xhtml+xml" href="content/nav/toc.xhtml" properties="scripted"/>
-		<item id="nav010" media-type="application/xhtml+xml" href="content/nav/landmarks.xhtml" properties="scripted"/>
-		<item id="nav015" media-type="application/xhtml+xml" href="content/nav/pagelist.xhtml" properties="scripted"/>
-		<item id="nav020" media-type="application/xhtml+xml" href="content/nav/loi.xhtml" properties="scripted"/>
-		<item id="nav025" media-type="application/xhtml+xml" href="content/nav/lot.xhtml" properties="scripted"/>
+		<item id="nav005" media-type="application/xhtml+xml" href="content/nav/toc.html" properties="scripted"/>
+		<item id="nav010" media-type="application/xhtml+xml" href="content/nav/landmarks.html" properties="scripted"/>
+		<item id="nav015" media-type="application/xhtml+xml" href="content/nav/pagelist.html" properties="scripted"/>
+		<item id="nav020" media-type="application/xhtml+xml" href="content/nav/loi.html" properties="scripted"/>
+		<item id="nav025" media-type="application/xhtml+xml" href="content/nav/lot.html" properties="scripted"/>
 		
-		<item id="meta005" media-type="application/xhtml+xml" href="content/meta/onix.xhtml" properties="scripted"/>
-		<item id="meta010" media-type="application/xhtml+xml" href="content/meta/schema.org.xhtml" properties="scripted"/>
+		<item id="meta005" media-type="application/xhtml+xml" href="content/meta/onix.html" properties="scripted"/>
+		<item id="meta010" media-type="application/xhtml+xml" href="content/meta/schema.org.html" properties="scripted"/>
 		
-		<item id="mo005" media-type="application/xhtml+xml" href="content/overlays/overview.xhtml" properties="scripted"/>
-		<item id="mo010" media-type="application/xhtml+xml" href="content/overlays/hilite.xhtml" properties="scripted"/>
-		<item id="mo015" media-type="application/xhtml+xml" href="content/overlays/lists.xhtml" properties="scripted"/>
-		<item id="mo020" media-type="application/xhtml+xml" href="content/overlays/tables.xhtml" properties="scripted"/>
+		<item id="mo005" media-type="application/xhtml+xml" href="content/overlays/overview.html" properties="scripted"/>
+		<item id="mo010" media-type="application/xhtml+xml" href="content/overlays/hilite.html" properties="scripted"/>
+		<item id="mo015" media-type="application/xhtml+xml" href="content/overlays/lists.html" properties="scripted"/>
+		<item id="mo020" media-type="application/xhtml+xml" href="content/overlays/tables.html" properties="scripted"/>
 		
-		<item id="tts005" media-type="application/xhtml+xml" href="content/tts/overview.xhtml"/>
-		<item id="tts010" media-type="application/xhtml+xml" href="content/tts/pls.xhtml" properties="scripted"/>
-		<item id="tts015" media-type="application/xhtml+xml" href="content/tts/ssml.xhtml" properties="scripted"/>
-		<item id="tts020" media-type="application/xhtml+xml" href="content/tts/speech.xhtml" properties="scripted"/>
+		<item id="tts005" media-type="application/xhtml+xml" href="content/tts/overview.html"/>
+		<item id="tts010" media-type="application/xhtml+xml" href="content/tts/pls.html" properties="scripted"/>
+		<item id="tts015" media-type="application/xhtml+xml" href="content/tts/ssml.html" properties="scripted"/>
+		<item id="tts020" media-type="application/xhtml+xml" href="content/tts/speech.html" properties="scripted"/>
 		
-		<item id="sc005" media-type="application/xhtml+xml" href="content/script/pe.xhtml" properties="scripted"/>
-		<item id="sc010" media-type="application/xhtml+xml" href="content/script/valid.xhtml" properties="scripted"/>
-		<item id="sc015" media-type="application/xhtml+xml" href="content/script/aria.xhtml" properties="scripted"/>
-		<item id="sc020" media-type="application/xhtml+xml" href="content/script/forms.xhtml" properties="scripted"/>
-		<item id="sc025" media-type="application/xhtml+xml" href="content/script/regions.xhtml" properties="scripted"/>
-		<item id="sc030" media-type="application/xhtml+xml" href="content/script/canvas.xhtml" properties="scripted"/>
+		<item id="sc005" media-type="application/xhtml+xml" href="content/script/pe.html" properties="scripted"/>
+		<item id="sc010" media-type="application/xhtml+xml" href="content/script/valid.html" properties="scripted"/>
+		<item id="sc015" media-type="application/xhtml+xml" href="content/script/aria.html" properties="scripted"/>
+		<item id="sc020" media-type="application/xhtml+xml" href="content/script/forms.html" properties="scripted"/>
+		<item id="sc025" media-type="application/xhtml+xml" href="content/script/regions.html" properties="scripted"/>
+		<item id="sc030" media-type="application/xhtml+xml" href="content/script/canvas.html" properties="scripted"/>
 	</manifest>
 	<spine>
 		<itemref idref="nav"/>
@@ -184,6 +182,5 @@
 		<itemref idref="s508"/>
 		<itemref idref="accesslist"/>
 		<itemref idref="glossary"/>
-		<itemref idref="rev"/>
 	</spine>
 </package>

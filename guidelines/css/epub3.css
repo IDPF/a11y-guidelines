@@ -137,18 +137,6 @@ nav.bottomNav {
 	margin-left: 1em;
 }
 
-nav.pageNav .prev {
-	float: left;
-	padding-left: 20px;
-	background: url('../graphics/previous.png') left no-repeat;
-}
-
-nav.pageNav .next {
-	float: right;
-	padding-right: 20px;
-	background: url('../graphics/next.png') right no-repeat;
-}
-
 /* section nav */
 nav.mini-toc {
 	font-family: Helvetica,Arial,sans-serif;
