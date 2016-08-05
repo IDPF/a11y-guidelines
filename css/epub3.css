@@ -9,7 +9,7 @@ html, body {
 body {
 	font-family: Calibri,Helvetica,Arial,sans-serif;
 	background-color: rgb(253,253,253);
-	max-width: 44em;
+	max-width: 48em;
 }
 
 /* general headings */
@@ -68,9 +68,7 @@ h1 a, nav a {
 /* page headers and footers */
 
 header {
-	margin-bottom: -0.55em;
 	padding: 0.5em;
-	border-bottom: 1px solid rgb(0,0,0);
 	min-height: 60px;
 }
 
@@ -87,7 +85,6 @@ footer {
 	margin-bottom: 0em;
 	margin-left: 1em;
 	padding-bottom: 0.5em;
-	border-top: 1px ridge rgb(150,150,150);
 }
 
 footer address {
@@ -155,31 +152,29 @@ nav.pageNav .next {
 /* section nav */
 nav.mini-toc {
 	font-family: Helvetica,Arial,sans-serif;
-	margin: -1.85em 0em 0.5em 1.5em;
-	padding: 0em 0em 0.5em 0em;
-	float: right;
+	margin-left: 4em;
+	margin-top: 0.3em;
 	min-width: 7em;
-	border-bottom: 1px solid rgb(0,0,0);
-	background-color: rgb(253,253,253);
 }
 
 nav.mini-toc h3 {
-	text-indent: 0.5em;
 	font-size: 0.8em;
 	margin: 0em;
-	padding: 0.4em;
 	border: none;
+	display: inline-block;
 }
 
 nav.mini-toc ol {
 	list-style-type: none;
 	margin: 0em;
 	padding: 0em;
+	display: inline-block;
 }
 
 nav.mini-toc li {
 	font-size: 0.9em;
 	padding: 0em 0.3em 0em 0.8em;
+	display: inline-block;
 }
 
 nav.mini-toc a {

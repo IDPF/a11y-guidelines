@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+	<head>
+		<meta charset="utf-8" />
+		<title>Styling | SVG Content Documents | EPUB 3 Accessibility Guidelines</title>
+		<!--[if lt IE 9]> 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="../../css/epub3.css" />
+		<link href="../../css/classic-code.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="../../js/prettify.js"></script>
+		<script type="text/javascript" src="../../js/jquery172min.js"></script>
+		<script type="text/javascript"> 	// <![CDATA[
+            $(document).ready(function () {
+                prettyPrint();
+            });//]]> </script>
+	</head>
+
+	<body>
+		<header>
+			<div class="left">
+				<img src="http://www.idpf.org/sites/idpf.org/files/epub-logo-2.gif" alt="EPUB Logo" class="logo" />
+			</div>
+			<h1><a href="http://www.idpf.org/accessibility/guidelines/">EPUB 3 Accessibility Guidelines</a></h1>
+			<nav class="breadcrumb">
+				<p>Main / SVG Content Documents / Styling</p>
+			</nav>
+			<nav class="mini-toc">
+				<h3>In this section:</h3>
+				<ol>
+					<li><a href="#svg030-ex">Examples</a></li>
+					<li><a href="#svg030-reqs">Compliance References</a></li>
+					<li><a href="#svg030-res">Resources</a></li>
+				</ol>
+			</nav>
+		</header>
+		<section id="svg030" class="section">
+			<h2>Styling</h2>
+
+			<section id="svg030-desc" class="usage">
+				<p>Whenever possible, define style properties for graphical components in a separate style sheet. Cleanly
+					separating styling allows readers to apply their own custom styles if they have difficulty with the
+					default appearance.</p>
+
+				<p>Avoid adding the <code>style</code> attribute directly to graphical components, as it can interfere with
+					the ability of a reader to change the appearance.</p>
+
+				<p>Whenever embedding text, ensure there is a strong contrast between the prose and any background images so
+					that the two don't blend together.</p>
+
+				<p>See the EPUB Style Sheets section of this guide for additional considerations.</p>
+			</section>
+
+			<section id="svg030-ex" class="example">
+				<h3>Examples</h3>
+				<p>The W3C Accessibility Features of SVG Note includes the following reference examples:</p>
+				<ul>
+					<li><a href="http://www.w3.org/TR/SVG-access/#Fig-4.11">Defining some style values</a></li>
+					<li><a href="http://www.w3.org/TR/SVG-access/#Fig-4.12">An alternative stylesheet for the computer
+							image</a></li>
+				</ul>
+			</section>
+
+			<section id="svg030-reqs" class="reqs">
+				<h3>Compliance References and Standards</h3>
+
+				<ul>
+					<li>SVG 1.1 &#8212; <a href="http://www.w3.org/TR/SVG/styling.html">Styling</a></li>
+					<li>SVG 1.1 &#8212; <a href="http://www.w3.org/TR/SVG/access.html#SVGAccessibilityGuidelines">SVG Content
+							Accessibility Guidelines</a></li>
+					<li>SVG A11y Note &#8212; <a href="http://www.w3.org/TR/SVG-access/#SVGStyle">Defining Style Values with
+							SVG Elements</a></li>
+				</ul>
+			</section>
+
+			<section id="svg030-res" class="res">
+				<h3>Additional Resources</h3>
+				<ul>
+					<li>Mozilla Developer's Network &#8212; <a href="https://developer.mozilla.org/en/SVG">SVG</a></li>
+				</ul>
+			</section>
+		</section>
+		<footer>
+			<p>Please ask questions and report any typos, errors and omissions in the <a href="http://idpf.org/forums">IDPF
+					forums</a>.</p>
+			<p>For a list of changes to this site, refer to the <a
+					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
+			<p><a href="http://idpf.org/legal/terms-of-use">Terms of Use</a></p>
+		</footer>
+	</body>
+</html>

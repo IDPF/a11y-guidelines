@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8" />
+		<title>Accessibility QA Checklist | EPUB 3 Accessibility Guidelines</title>
+		<!--[if lt IE 9]> 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="../../css/epub3.css" />
+		<link type="text/css" rel="stylesheet" href="../../css/checklist.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="left">
+				<img src="http://www.idpf.org/sites/idpf.org/files/epub-logo-2.gif" alt="EPUB Logo" class="logo" />
+			</div>
+			<h1><a href="http://www.idpf.org/accessibility/guidelines/">EPUB 3 Accessibility Guidelines</a></h1>
+			<nav class="breadcrumb">
+				<p>Main / Accessibility QA Checklist</p>
+			</nav>
+		</header>
+		<section class="section">
+			<h2>Accessibility QA Checklist</h2>
+
+			<aside class="note">
+				<h3>Note</h3>
+				<p>This checklist is no longer being maintained. Content developers are advised to review the <a
+						href="http://www.idpf.org/epub/a11y/">EPUB Accessibility</a> and <a
+						href="http://www.idpf.org/epub/a11y/techniques/">Techniques</a> documents for guidance on creating
+					accessible EPUB Publications. A conformance checking tool is currently under development that will
+					obsolete this checklist. When completed, this page will be removed.</p>
+			</aside>
+
+			<section id="markup-semantics">
+				<h3>Semantics</h3>
+
+				<section id="semantics-epubtype">
+					<h4><a href="../semantics/epub-type.html">The <code>epub:type</code> attribute</a></h4>
+					<ul class="req">
+						<li id="M-SE1">Semantics from the EPUB Structural Semantics Vocabulary added to identify structural
+							sections and significant content structures</li>
+					</ul>
+				</section>
+
+				<section id="semantics-order">
+					<h4><a href="../semantics/order.html">Logical Reading Order</a></h4>
+					<ul class="req">
+						<li id="M-SO1">Secondary content is identifiable from logical reading order by inclusion in
+								<code>aside</code> and <code>figure</code> tags</li>
+						<li id="M-SO3">The order of the markup in content files matches the primary narrative</li>
+						<li id="M-SO4">The publication is readable from beginning to end without scripting or styles
+							applied</li>
+					</ul>
+				</section>
+
+				<section id="semantics-separation">
+					<h4><a href="../semantics/separation.html">Separation of Style</a></h4>
+					<ul class="req">
+						<li id="M-SC1">CSS properties not defined using the <code>style</code> attribute</li>
+					</ul>
+				</section>
+			</section>
+
+
+
+			<section id="markup-xhtml">
+				<h3>XHTML Content Documents</h3>
+
+				<section id="xhtml-lang">
+					<h4><a href="../xhtml/lang.html">Language</a></h4>
+					<ul class="req">
+						<li id="M-XLA1">The <code>lang</code> and <code>xml:lang</code> attributes are set on all root
+								<code>html</code> elements</li>
+						<li id="M-XLA2">The <code>lang</code> and <code>xml:lang</code> attributes are set on all instances
+							of foreign language prose</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-emphasis">
+					<h4><a href="../xhtml/emphasis.html">Emphasis and Bolding</a></h4>
+					<ul class="req">
+						<li id="M-XE1"><code>em</code>, <code>strong</code>, <code>i</code> and <code>b</code> tags used as
+							per their definitions in HTML5</li>
+						<li id="M-EX2">CSS styling used for presentational bolding and italics</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-links">
+					<h4><a href="../xhtml/links.html">Links</a></h4>
+					<ul class="req">
+						<li id="M-XX1">Link text clearly indicates destination, or meaningful alternative is provided in a
+								<code>title</code> attribute</li>
+						<li id="M-XX2">A secondary means of identifying linked text has been provided</li>
+					</ul>
+				</section>
+				
+				<section id="xhtml-sec">
+					<h4><a href="../xhtml/sections.html">Sections</a></h4>
+					<ul class="req">
+						<li id="M-XS1">All structurally-significant content grouped in <code>section</code> elements</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-hd">
+					<h4><a href="../xhtml/headings.html">Headings</a></h4>
+					<ul class="req">
+						<li id="M-XH1">Numbered headings accurately reflect the document hierarchy</li>
+						<li id="M-XH2">Each sectioning element has only a single heading</li>
+						<li id="M-XH3">Headings have not been used in <code>blockquote</code> and <code>figure</code>
+							elements</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-lists">
+					<h4><a href="../xhtml/lists.html">Lists</a></h4>
+					<ul class="req">
+						<li id="M-XL1">Sets of related items marked up using <code>ol</code> or <code>ul</code> elements, as
+							appropriate</li>
+						<li id="M-XL2">Glossaries, dictionaries, faqs and similar name/value association lists marked up
+							using <code>dl</code> elements</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-tables">
+					<h4><a href="../xhtml/tables.html">Tables</a></h4>
+					<ul class="req">
+						<li id="M-XT1">All table heading cells identified using <code>th</code> elements</li>
+						<li id="M-XT2">The <code>thead</code> element used to group multi-row headings</li>
+						<li id="M-XT3">The <code>scope</code> attribute added when heading cell applicability is not clear</li>
+						<li id="M-XT4">The <code>headers</code> attribute added to cells when their heading is ambiguous or
+							contained in more than one cell</li>
+						<li id="M-XT5">A summary of the table layout and content provided for all complex tables</li>
+						<li id="M-XT6">Captions provided, as applicable</li>
+						<li id="M-XT7">Tables not used for presentational or fixed layout of content</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-audio">
+					<h4><a href="../xhtml/audio.html">Audio</a></h4>
+					<ul class="req">
+						<li id="M-XA1">Native controls enabled by default</li>
+						<li class="labeled"><span>To assist when audio may not be audible, one or more of the following
+								provided:</span>
+							<ul class="req">
+								<li id="M-XA2">Transcripts of audio content provided</li>
+								<li id="M-XA3">Sign-language interpretation provided via an associated video element</li>
+							</ul>
+						</li>
+						<li id="M-XA4">Navigation by scene provided, when applicable</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-video">
+					<h4><a href="../xhtml/video.html">Video</a></h4>
+					<ul class="req">
+						<li id="M-XV1">Native controls enabled by default</li>
+						<li class="labeled"><span>To assist when audio may not be audible, one or more of the following
+								provided:</span>
+							<ul class="req">
+								<li id="M-XV2">Captions for all video content containing audio content</li>
+								<li id="M-XV3">Subtitles for all video content contain ing spoken language</li>
+								<li id="M-XV4">Sign-language interpretation track for all video content</li>
+								<li id="M-XV5">Transcripts of video content provided</li>
+							</ul>
+						</li>
+						<li class="labeled"><span>To assist when video may not be visible:</span>
+							<ul class="req">
+								<li id="M-XV6">Text description tracks provided</li>
+							</ul>
+						</li>
+						<li id="M-XV7">Navigation by scene provided, when applicable</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-fig">
+					<h4><a href="../xhtml/figures.html">Figures</a></h4>
+					<ul class="req">
+						<li id="M-XF1">Images, charts, code samples and other secondary content encapsulated in
+								<code>figure</code> tags</li>
+						<li id="M-XF2">The <code>figcaption</code> element used to identify figure captions</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-img">
+					<h4><a href="../xhtml/images.html">Images</a></h4>
+					<ul class="req">
+						<li id="M-XI1">Text alternatives provided for all significant images</li>
+						<li id="M-XI2">Descriptions provided for all significant images</li>
+						<li id="M-XI3"><code>alt</code> attribute left empty for all decorative images</li>
+						<li id="M-XI4">The ARIA <code>role</code> attribute included with the property <code class="property"
+								>presentation</code> for all decorative images</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-maps">
+					<h4><a href="../xhtml/maps.html">Image Maps</a></h4>
+					<ul class="req">
+						<li id="M-XM1"><code>alt</code> attribute used to provide meaningful labels to image map areas</li>
+						<li id="M-XM2">Server-side image maps not used</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-iframes">
+					<h4><a href="../xhtml/iframes.html">Inline Frames</a></h4>
+					<ul class="req">
+						<li id="M-XIF1">A meaningful title added to all significant <code>iframe</code> elements</li>
+						<li id="M-XIF3">A link to the associated content document included as a fallback for all significant
+								<code>iframe</code> elements</li>
+						<li id="M-XIF4">Relative sizing units used for all <code>iframe</code> elements</li>
+						<li id="M-XIF5">Scrolling not disabled by default on <code>iframe</code> elements</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-notes">
+					<h4><a href="../xhtml/notes.html">Notes</a></h4>
+					<ul class="req">
+						<li id="M-XN1">Notes within the primary narrative identified using the <code>aside</code> element
+							with an appropriate <code>epub:type</code> value</li>
+						<li id="M-XN2">Groups of notes identified by an appropriate <code>epub:type</code> value</li>
+						<li id="M-XN3">Note references identified using the <code>epub:type</code> attribute with the value
+								<code class="property">noteref</code></li>
+					</ul>
+				</section>
+
+				<section id="xhtml-anno">
+					<h4><a href="../xhtml/annotations.html">Annotations</a></h4>
+					<ul class="req">
+						<li id="M-XAN1">Annotations within the primary narrative identified using the <code>aside</code>
+							element with an <code>epub:type</code> attribute with the value <code>annotation</code></li>
+						<li id="M-XAN2">Inline annotations identified using the <code>ruby</code> element</li>
+						<li id="M-XAN3">Annotation references identified using the <code>epub:type</code> attribute with the
+							value <code class="property">annoref</code></li>
+					</ul>
+				</section>
+
+				<section id="xhtml-context">
+					<h4><a href="../xhtml/context.html">Context Breaks</a></h4>
+					<ul class="req">
+						<li id="M-XC1">Changes in context identified using <code>hr</code> elements</li>
+					</ul>
+				</section>
+
+				<section id="xhtml-pgnum">
+					<h4><a href="../xhtml/pagenum.html">Page Numbers</a></h4>
+					<ul class="req">
+						<li id="M-XP1">The print source identified in a <code>dc:source</code> element in the package
+							document <code>metadata</code> section</li>
+						<li id="M-XP2">Print page break locations included when the EPUB has a print equivalent</li>
+						<li id="M-XP3">The navigation document includes a <code>page-list nav</code> to facilitate page
+							navigation</li>
+					</ul>
+				</section>
+			</section>
+
+
+
+			<section id="markup-mathml">
+				<h3>MathML</h3>
+
+				<section id="mathml-desc">
+					<h4><a href="../mathml/desc.html">Descriptions</a></h4>
+					<ul class="req">
+						<li id="M-M1">MathML markup included for all math content</li>
+						<li id="M-M2">Simple MathML content described using the <code>alttext</code> attribute</li>
+						<li id="M-M3">Complex MathML content described using an embedded <code>annotation-xml</code> element</li>
+					</ul>
+				</section>
+			</section>
+
+
+
+			<section id="markup-svg">
+				<h3>SVG Content Documents and Images</h3>
+
+				<section id="svg-lang">
+					<h4><a href="../svg/lang.html">Language</a></h4>
+					<ul class="req">
+						<li id="M-GLA1">The <code>xml:lang</code> attribute set on all root <code>svg</code> elements</li>
+						<li id="M-GLA2">The <code>xml:lang</code> attribute set on all instances of foreign language text
+							within each SVG image</li>
+					</ul>
+				</section>
+
+				<section id="svg-desc">
+					<h4><a href="../svg/desc.html">Titles and Descriptions</a></h4>
+					<ul class="req">
+						<li id="M-GD1">All significant images include a title (<code>title</code> element)</li>
+						<li id="M-GD2">All complex images include a description (<code>desc</code> element)</li>
+						<li id="M-GD3">All components within an SVG image include a <code>title</code> and
+							<code>desc</code></li>
+						<li id="M-GD4">All presentational SVG images marked using the ARIA <code>role</code> attribute</li>
+					</ul>
+				</section>
+
+				<section id="svg-components">
+					<h4><a href="../svg/components.html">Components</a></h4>
+					<ul class="req">
+						<li id="M-GC1">Component definitions re-used whenever possible to simplify overall comprehension</li>
+					</ul>
+				</section>
+
+				<section id="svg-text">
+					<h4><a href="../svg/text.html">Text Content</a></h4>
+					<ul class="req">
+						<li id="M-GT1">All embedded text content contained in <code>text</code> elements</li>
+						<li id="M-GT2">Sufficient contrast maintained between embedded text and background image</li>
+						<li id="M-GT3">Custom fonts used in place of creating text as images</li>
+					</ul>
+				</section>
+
+				<section id="svg-linking">
+					<h4><a href="../svg/linking.html">Linking</a></h4>
+					<ul class="req">
+						<li id="M-GL1">All embedded links include an <code>xlink:title</code> attribute explaining the target
+							location</li>
+						<li id="M-GL2">Linked components are visually distinguishable from unlinked components</li>
+					</ul>
+				</section>
+
+				<section id="svg-css">
+					<h4><a href="../svg/css.html">Styling</a></h4>
+					<ul class="req">
+						<li id="M-GS1">CSS rules defined for <code>title</code> and <code>desc</code> elements to enable
+							rendering</li>
+						<li id="M-GS2">Visual styling of components separated into CSS style sheets to facilitate reader
+							customization</li>
+					</ul>
+				</section>
+
+				<section id="svg-script">
+					<h4><a href="../svg/script.html">Interactivity</a></h4>
+					<ul class="req">
+						<li id="M-GI1">Scripting not required to render or understand SVG images</li>
+						<li id="M-GI2">ARIA roles, states and properties used to enhance the accessibility of scripted
+							content</li>
+						<li id="M-GI3">Text equivalents are updated whenever dynamic content changes</li>
+						<li id="M-GI4">Device-independent events used for all interactive actions</li>
+					</ul>
+				</section>
+			</section>
+
+
+
+			<section id="markup-css">
+				<h3>EPUB Style Sheets</h3>
+
+				<section id="css-colors">
+					<h4><a href="../style/color.html">Colors</a></h4>
+					<ul class="req">
+						<li id="M-CC1">Semantic markup used whenever colors convey information visually</li>
+						<li id="M-CC2">Sufficient contrast levels maintained between the text and any background colors and
+							images (as defined in WCAG 2.0)</li>
+						<li id="M-CC3">Text not positioned over pictures and other images with noisy backgrounds</li>
+						<li id="M-CC4">Red/green combinations have been avoided</li>
+						<li id="M-CC5">Red/black combinations have been avoided</li>
+						<li id="M-CC6">Brightly colored hue combinations have been avoided</li>
+					</ul>
+				</section>
+
+				<section id="css-bg">
+					<h4><a href="../style/backgrounds.html">Backgrounds</a></h4>
+					<ul class="req">
+						<li id="M-CB1">Background images not used to convey information</li>
+						<li id="M-CB2">Sufficient contrast levels maintained between the text and any background colors and
+							images (as defined in WCAG 2.0)</li>
+					</ul>
+				</section>
+
+				<section id="css-hiding">
+					<h4><a href="../style/hidden.html">Hidden Content</a></h4>
+					<ul class="req">
+						<li id="M-CH1">Content critical to the logical flow of a publication not initialized in a hidden
+							state</li>
+						<li id="M-CH2">HTML5 and ARIA techniques used to include optional text and descriptions</li>
+						<li id="M-CH3">The state of the <code>aria-hidden</code> attribute maintained as the visibility of
+							content is toggled</li>
+					</ul>
+				</section>
+			</section>
+
+
+			<section id="markup-fixed">
+				<h3>Fixed Layout</h3>
+
+				<section id="fixed-xhtml">
+					<h4><a href="../fixed/xhtml.html">XHTML</a></h4>
+					<ul class="req">
+						<li id="M-FX1">Logical reading order maintained in markup</li>
+						<li id="M-FX2">Semantic markup applied to content to facilitate comprehension of layout</li>
+					</ul>
+				</section>
+
+				<section id="fixed-img">
+					<h4><a href="../fixed/img.html">Image</a></h4>
+					<ul class="req">
+						<li id="M-FI1">Publication does not contain empty documents that employ the <code class="property"
+								>background-image</code> property to display images</li>
+					</ul>
+				</section>
+			</section>
+
+
+			<section id="markup-nav">
+				<h3>Navigation</h3>
+
+				<section id="nav-toc">
+					<h4><a href="../nav/toc.html">Table of Contents</a></h4>
+					<ul class="req">
+						<li id="M-NC1">The <code>toc nav</code> includes the full structure of the publication</li>
+						<li id="M-NC2">The <code>hidden</code> attribute used to disable visual rendering of unwanted levels</li>
+					</ul>
+				</section>
+
+				<section id="nav-landmarks">
+					<h4><a href="../nav/landmarks.html">Landmarks</a></h4>
+					<ul class="req">
+						<li id="M-NL1">Links to all significant sections of the publication added</li>
+					</ul>
+				</section>
+
+				<section id="nav-pagelist">
+					<h4><a href="../nav/pagelist.html">Page List</a></h4>
+					<ul class="req">
+						<li id="M-NP2">The package document metadata includes a <code>dc:source</code> element identifying
+							the print edition</li>
+					</ul>
+				</section>
+
+				<section id="nav-loi">
+					<h4><a href="../nav/loi.html">List of Illustrations</a></h4>
+					<ul class="req">
+						<li id="M-NI1">Links to all illustrations and figures in the publication provided</li>
+					</ul>
+				</section>
+
+				<section id="nav-lot">
+					<h4><a href="../nav/lot.html">List of Tables</a></h4>
+					<ul class="req">
+						<li id="M-NT1">Links to all tables in the publication provided</li>
+					</ul>
+				</section>
+			</section>
+
+
+			<section id="markup-overlays">
+				<h3>Media Overlays</h3>
+
+				<section id="overlays-hilite">
+					<h4><a href="../overlays/hilite.html">Highlighting</a></h4>
+					<ul class="req">
+						<li id="M-OH1">Sufficient contrast maintained between active text and the highlighting color</li>
+					</ul>
+				</section>
+
+				<section id="overlays-lists">
+					<h4><a href="../overlays/lists.html">Lists</a></h4>
+					<ul class="req">
+						<li id="M-OL1">Each list in the markup represented by a <code>seq</code> element with its
+								<code>epub:type</code> attribute set to <code class="property">list</code></li>
+						<li id="M-OL2">Each list item in the markup represented either by a <code>seq</code> or
+								<code>par</code> element with its <code>epub:type</code> attribute set to <code
+								class="property">list-item</code></li>
+						<li id="M-OL3">All related <code>dt</code> and <code>dd</code> elements in a definition list are
+							grouped together in a <code>seq</code> element with its <code>epub:type</code> attribute set to
+								<code class="property">list-item</code></li>
+					</ul>
+				</section>
+
+				<section id="overlays-tables">
+					<h4><a href="../overlays/tables.html">Tables</a></h4>
+					<ul class="req">
+						<li id="M-OT1">Each table in the markup represented by a <code>seq</code> element with its
+								<code>epub:type</code> attribute set to <code class="property">table</code></li>
+						<li id="M-OT2">Each table row in the markup represented by a <code>seq</code> element with its
+								<code>epub:type</code> attribute set to <code class="property">table-row</code></li>
+						<li id="M-OT3">Each table cell in the markup represented either by a <code>seq</code> or
+								<code>par</code> element with its <code>epub:type</code> attribute set to <code
+								class="property">table-cell</code></li>
+					</ul>
+				</section>
+			</section>
+
+
+
+			<section id="markup-tts">
+				<h3>Text-to-Speech</h3>
+
+				<section id="tts-pls">
+					<h4><a href="../tts/pls.html">PLS Lexicons</a></h4>
+					<ul class="req">
+						<li id="M-TL1">The lexicon defines all unique proper names, nouns and other complex words</li>
+						<li id="M-TL2">The lexicon includes the default pronunciation for any heteronyms</li>
+					</ul>
+				</section>
+
+				<section id="tts-ssml">
+					<h4><a href="../tts/ssml.html">SSML</a></h4>
+					<ul class="req">
+						<li id="M-TS1">Pronunciations defined to disambiguate heteronyms</li>
+						<li id="M-TS2">Pronunciations defined for ambiguous number forms</li>
+						<li id="M-TS3">Pronunciations defined for jargon, slang, slurred and other non-standard speech forms</li>
+					</ul>
+				</section>
+
+				<section id="tts-speech">
+					<h4><a href="../tts/speech.html">CSS3 Speech</a></h4>
+					<ul class="req">
+						<li id="M-TC1">All abbreviations, acronyms, numbers and other constructs that should be spelled out
+							have the <code>spell-out</code> property defined</li>
+					</ul>
+				</section>
+			</section>
+
+
+
+			<section id="markup-script">
+				<h3>Scripted Interactivity</h3>
+
+				<section id="script-pe">
+					<h4><a href="../script/pe.html">Progressive Enhancement</a></h4>
+					<ul class="req">
+						<li id="M-IE1">Scripting not required in order to traverse the complete logical reading order of the
+							publication</li>
+						<li id="M-IE2">Scripting not required in order to make content visible</li>
+						<li id="M-IE3">Readers can access all content regardless of location, preference settings, etc.</li>
+					</ul>
+				</section>
+
+				<section id="script-valid">
+					<h4><a href="../script/valid.html">Content Validity</a></h4>
+					<ul class="req">
+						<li id="M-IV1">Scripting not used to manipulate the HTML DOM in such a way that it produces invalid
+							markup</li>
+					</ul>
+				</section>
+
+				<section id="script-controls">
+					<h4><a href="../script/aria.html">WAI-ARIA &amp; Custom Controls</a></h4>
+					<ul class="req">
+						<li id="M-IC1">All custom controls are reachable in a device-independent manner</li>
+						<li id="M-IC2">All custom controls fully implement ARIA roles, states and properties, as
+							appropriate</li>
+					</ul>
+				</section>
+
+				<section id="script-forms">
+					<h4><a href="../script/forms.html">Forms</a></h4>
+					<ul class="req">
+						<li id="M-IF1">Labels and controls linked via markup</li>
+						<li id="M-IF2">All custom controls are reachable in a device-independent manner</li>
+						<li id="M-IF3">Form controls laid out in logical order or <code>tabindex</code> attribute used to
+							give order</li>
+						<li id="M-IF4">All custom controls made accessible via use of ARIA roles, states and properties</li>
+						<li id="M-IF5">The <code>aria-invalid</code> attribute set when fields contain invalid data</li>
+					</ul>
+				</section>
+
+				<section id="script-regions">
+					<h4><a href="../script/regions.html">Live Regions</a></h4>
+					<ul class="req">
+						<li id="M-IR1">All live regions identified using ARIA roles and properties</li>
+						<li id="M-IR2">Assertiveness of all announcements matches their importance to the reading
+							experience</li>
+					</ul>
+				</section>
+
+				<section id="script-canvas">
+					<h4><a href="../script/canvas.html">Canvas</a></h4>
+					<ul class="req">
+						<li id="M-ICV1"><code>figure</code> and <code>figcaption</code> used to add context when
+								<code>canvas</code> represents a static image</li>
+						<li id="M-ICV2"><code>canvas</code> only used to enhance graph, chart and similar data
+							representations</li>
+						<li id="M-ICV3">ARIA roles, states and properties used to make interactive <code>canvas</code>
+							elements accessible</li>
+						<li id="M-ICV4">Alternate representations and fallbacks included when accessible scripting not
+							possible</li>
+					</ul>
+				</section>
+			</section>
+
+			<section id="meta">
+				<p>Note: Always consider including an ONIX metadata record with your publication indicating the applicable
+					accessibility criteria that have been met (see the <a href="../meta/onix.html">ONIX metadata info
+					page</a>).</p>
+			</section>
+		</section>
+		<footer>
+			<p>Please ask questions and report any typos, errors and omissions in the <a href="http://idpf.org/forums">IDPF
+					forums</a>.</p>
+			<p>For a list of changes to this site, refer to the <a
+					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
+			<p><a href="http://idpf.org/legal/terms-of-use">Terms of Use</a></p>
+		</footer>
+	</body>
+</html>
