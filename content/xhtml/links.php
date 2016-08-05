@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm043'; $nav=1; $nav_items=array('ex','reqs','faq','rev'); $category='xhtml'; $page_name='Links'; ?>
+<?php $id='xhtm043'; $nav=1; $nav_items=array('ex','reqs','faq'); $category='xhtml'; $page_name='Links'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"

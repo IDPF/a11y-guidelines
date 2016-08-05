@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm110'; $nav=1; $nav_items=array('ex','reqs','res','faq','rev'); $category='xhtml'; $page_name='Inline Frames'; ?>
+<?php $id='xhtm110'; $nav=1; $nav_items=array('ex','reqs','res','faq'); $category='xhtml'; $page_name='Inline Frames'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -97,11 +97,6 @@
 					<dd><p>No, it is not valid to use the presentation role on <code>iframe</code> elements. The presentation role only removes the
 						element it is on from the accessibility tree, not its descendant content, so would not have the desired effect if used.</p></dd>
 				</dl>
-			</section>
-			
-			<section id="xhtm110-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='meta005'; $nav=1; $nav_items=array( 'ex','reqs','res','faq','rev'); $category='meta'; $page_name='ONIX'; ?>
+<?php $id='meta005'; $nav=1; $nav_items=array('ex','reqs','res','faq'); $category='meta'; $page_name='ONIX'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
