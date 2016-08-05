@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+	<head>
+		<meta charset="utf-8" />
+		<title>Image Maps | XHTML Content Documents | EPUB 3 Accessibility Guidelines</title>
+		<!--[if lt IE 9]> 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="../../css/epub3.css" />
+		<link href="../../css/classic-code.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="../../js/prettify.js"></script>
+		<script type="text/javascript" src="../../js/jquery172min.js"></script>
+		<script type="text/javascript"> 	// <![CDATA[
+            $(document).ready(function () {
+                prettyPrint();
+            });//]]> </script>
+	</head>
+
+	<body>
+		<header>
+			<div class="left">
+				<img src="http://www.idpf.org/sites/idpf.org/files/epub-logo-2.gif" alt="EPUB Logo" class="logo" />
+			</div>
+			<h1><a href="http://www.idpf.org/accessibility/guidelines/">EPUB 3 Accessibility Guidelines</a></h1>
+			<nav class="breadcrumb">
+				<p>Main / XHTML Content Documents / Image Maps</p>
+			</nav>
+			<nav class="mini-toc">
+				<h3>In this section:</h3>
+				<ol>
+					<li><a href="#xhtm067-ex">Examples</a></li>
+					<li><a href="#xhtm067-reqs">Compliance References</a></li>
+					<li><a href="#xhtm067-res">Resources</a></li>
+				</ol>
+			</nav>
+		</header>
+		<section id="xhtm067" class="section">
+			<h2>Image Maps</h2>
+
+			<section id="xhtm067-desc" class="usage">
+				<p>An image map, as its name suggests, is a kind of context-sensitive image that &#8212; depending on where
+					the reader clicks, touches or otherwise actives it &#8212; results in a unique operation being performed.
+					Image maps are commonly used to make two-dimensional maps dynamic (e.g., to provide information about the
+					country/state/province/region selected), to provide more information about points on an infographic,
+					etc.</p>
+
+				<p epub:type="bridgehead">Client-side v. Server-side</p>
+
+				<p>There are two ways to create maps: locally using the <code>usemap</code> attribute to reference a
+						<code>map</code> element that defines the clickable region; and remotely by enclosing the image in an
+						<code>a</code> tag and setting the <code>ismap</code> attribute on the <code>img</code> tag.</p>
+
+				<p>Server-side maps are inherently less accessible, both because they require that the reader be able to see
+					the image to discern the regions and also because they require that the reader be able to click on the
+					image in an exact spot.</p>
+
+				<p>Client-side maps make use of an associated <code>map</code> element to define the clickable regions. Each
+					region is specified in an <code>area</code> element, and each <code>area</code> should include an
+						<code>alt</code> attribute that indicates its purpose so that non-visual readers can easily discover
+					the functionality. Assistive technologies allow readers to iterate over these areas, making them a much
+					friendlier option than server-side maps, and without requiring intrusive fallbacks.</p>
+
+				<p>In fact, server-side maps provide no additional functionality, so their use is never recommended. If one
+					must be used, a set of links corresponding to each clickable region should be provided so that readers
+					who cannot interact with the map have equal access to the functionality.</p>
+
+				<p>Note that maps of either kind should never be used when a better alternative is available (e.g., to make
+					an image of text linkable).</p>
+			</section>
+
+			<section id="xhtm067-ex" class="example">
+				<h3>Example</h3>
+				<figure id="xhtm067-ex01">
+					<figcaption>Example 1 &#8212; A client-side map</figcaption>
+					<pre class="prettyprint linenums"><code>&lt;img
+     src="north-america.png"
+     usemap="#na-map"/>
+  &lt;map id="na-map">
+     &lt;area href="ca-info.xhtml" alt="Canada"/>
+     &lt;area href="us-info.xhtml" alt="US"/>
+     &lt;area href="mx-info.xhtml" alt="Mexico"/>
+  &lt;/map>
+</code></pre>
+				</figure>
+
+				<figure id="xhtm067-ex02">
+					<figcaption>Example 2 &#8212; A server-side map</figcaption>
+					<pre class="prettyprint linenums"><code>&lt;a href="">&lt;img
+     src="north-america.png"
+     ismap="ismap"/>&lt;/a>
+  &lt;map>
+     &lt;a href="ca-info.xhtml">Canada&lt;/a>
+     &lt;a href="us-info.xhtml">US&lt;/a>
+     &lt;a href="mx-info.xhtml">Mexico&lt;/a>
+  &lt;/map>
+</code></pre>
+				</figure>
+			</section>
+
+			<section id="xhtm067-reqs" class="reqs">
+				<h3>Compliance References and Standards</h3>
+
+				<ul>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/embedded-content-0.html#image-maps">Image
+						maps</a></li>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/embedded-content-0.html#the-map-element">The
+								<code>map</code> element</a></li>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/embedded-content-0.html#the-area-element">The
+								<code>area</code> element</a></li>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/embedded-content-0.html#attr-img-ismap">The
+								<code>ismap</code> attribute</a></li>
+					<li>WCAG 2.0 &#8212; <a href="http://www.w3.org/TR/WCAG20-TECHS/H24.html">H24: Providing text
+							alternatives for the area elements of image maps</a></li>
+					<li>WCAG 2.0 &#8212; <a href="http://www.w3.org/TR/WCAG20-TECHS/H24.html">H24: Providing text
+							alternatives for the area elements of image maps</a></li>
+				</ul>
+			</section>
+
+			<section id="xhtm067-res" class="res">
+				<h3>Additional Resources</h3>
+				<ul>
+					<li><a href="http://jimthatcher.com/webcourse5.htm">JimThatcher.com &#8211; Image maps</a></li>
+				</ul>
+			</section>
+		</section>
+		<footer>
+			<p>Please ask questions and report any typos, errors and omissions in the <a href="http://idpf.org/forums">IDPF
+					forums</a>.</p>
+			<p>For a list of changes to this site, refer to the <a
+					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
+			<p><a href="http://idpf.org/legal/terms-of-use">Terms of Use</a></p>
+		</footer>
+	</body>
+</html>

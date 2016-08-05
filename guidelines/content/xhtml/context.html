@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+	<head>
+		<meta charset="utf-8" />
+		<title>Context Breaks | XHTML Content Documents | EPUB 3 Accessibility Guidelines</title>
+		<!--[if lt IE 9]> 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="../../css/epub3.css" />
+		<link href="../../css/classic-code.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="../../js/prettify.js"></script>
+		<script type="text/javascript" src="../../js/jquery172min.js"></script>
+		<script type="text/javascript"> 	// <![CDATA[
+            $(document).ready(function () {
+                prettyPrint();
+            });//]]> </script>
+	</head>
+
+	<body>
+		<header>
+			<div class="left">
+				<img src="http://www.idpf.org/sites/idpf.org/files/epub-logo-2.gif" alt="EPUB Logo" class="logo" />
+			</div>
+			<h1><a href="http://www.idpf.org/accessibility/guidelines/">EPUB 3 Accessibility Guidelines</a></h1>
+			<nav class="breadcrumb">
+				<p>Main / XHTML Content Documents / Context Breaks</p>
+			</nav>
+			<nav class="mini-toc">
+				<h3>In this section:</h3>
+				<ol>
+					<li><a href="#xhtm090-ex">Examples</a></li>
+					<li><a href="#xhtm090-reqs">Compliance References</a></li>
+					<li><a href="#xhtm090-faq">FAQ</a></li>
+				</ol>
+			</nav>
+		</header>
+		<section id="xhtm090" class="section">
+			<h2>Context Breaks</h2>
+
+			<section id="xhtm090-desc" class="usage">
+				<p>A context break represents a shift in thought, time, location, etc. in a work of fiction or non-fiction
+					below the level of a section. These changes are typically represented by an extra blank line between
+					paragraphs, sometimes including asterisms and other decorations (traditionally when the shift occurs
+					immediately at the bottom of a print page).</p>
+
+				<p>In the past, CSS margins and images have been used to include context breaks, but the HTML5 specification
+					has redefined the semantics of the <code>hr</code> element specifically for this purpose. The element
+					should now always be used to represent these context changes. CSS styling can be applied to change the
+					default appearance.</p>
+
+				<p>The <code>hr</code> element should never be used for decorative purposes, such as between sections or at
+					the beginning or end of them.</p>
+			</section>
+
+			<section id="xhtm090-ex" class="example">
+				<h3>Examples</h3>
+
+				<figure id="xhtm090-ex01">
+					<figcaption>Example 1 &#8212; Blank-line context change</figcaption>
+					<pre class="prettyprint linenums"><code>&lt;style type="text/css">hr.transition {
+   width: 0em;
+   margin: 0.5em 0em;
+}
+&lt;/style>
+
+&lt;p>&lt;/p>
+&lt;hr class="transition"/>
+&lt;p>&lt;/p></code></pre>
+				</figure>
+
+				<figure id="xhtm090-ex02">
+					<figcaption>Example 2 &#8212; Asterism (CSS only)</figcaption>
+					<pre class="prettyprint linenums"><code class="language-css">hr.transition {
+   background: url('img/asterisks.gif') no-repeat center;
+   height: 1em;
+   border: none;
+   margin: 0.5em 0em;
+}</code></pre>
+				</figure>
+			</section>
+
+			<section id="xhtm090-reqs" class="reqs">
+				<h3>Compliance References and Standards</h3>
+
+				<ul>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/grouping-content.html#the-hr-element">The
+								<code>hr</code> element</a></li>
+				</ul>
+			</section>
+
+			<section id="xhtm090-faq" class="faq">
+				<h3>Frequently Asked Questions</h3>
+
+				<dl class="faq">
+					<dt id="xhtm090-faq01">Why shouldn't I use CSS to increase padding or margins to get the same
+						effect?</dt>
+					<dd><p>Although you may get the same visual effect, the reader is given no information that a change in
+							context has occurred. CSS class names carry no semantic meaning.</p>
+						<p>Print-first workflow tools often use this CSS technique to indicate context changes when
+							exporting, but it is inherently inaccessible.</p></dd>
+
+					<dt id="xhtm090-faq02">Can I insert an <code>img</code> tag to indicate context change?</dt>
+					<dd><p>Again, images are a suboptimal way to indicate a context change because they carry no semantic
+							information. Unlike pure CSS solutions, the <code>alt</code> attribute can be used to indicate
+							the context change, but that doesn't compensate for the more uniform experience that the
+								<code>hr</code> element can provide.</p></dd>
+				</dl>
+			</section>
+		</section>
+		<footer>
+			<p>Please ask questions and report any typos, errors and omissions in the <a href="http://idpf.org/forums">IDPF
+					forums</a>.</p>
+			<p>For a list of changes to this site, refer to the <a
+					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
+			<p><a href="http://idpf.org/legal/terms-of-use">Terms of Use</a></p>
+		</footer>
+	</body>
+</html>

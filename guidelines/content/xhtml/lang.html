@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+	<head>
+		<meta charset="utf-8" />
+		<title>Language | XHTML Content Documents | EPUB 3 Accessibility Guidelines</title>
+		<!--[if lt IE 9]> 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 		<![endif]-->
+		<link type="text/css" rel="stylesheet" href="../../css/epub3.css" />
+		<link href="../../css/classic-code.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="../../js/prettify.js"></script>
+		<script type="text/javascript" src="../../js/jquery172min.js"></script>
+		<script type="text/javascript"> 	// <![CDATA[
+            $(document).ready(function () {
+                prettyPrint();
+            });//]]> </script>
+	</head>
+
+	<body>
+		<header>
+			<div class="left">
+				<img src="http://www.idpf.org/sites/idpf.org/files/epub-logo-2.gif" alt="EPUB Logo" class="logo" />
+			</div>
+			<h1><a href="http://www.idpf.org/accessibility/guidelines/">EPUB 3 Accessibility Guidelines</a></h1>
+			<nav class="breadcrumb">
+				<p>Main / XHTML Content Documents / Language</p>
+			</nav>
+			<nav class="mini-toc">
+				<h3>In this section:</h3>
+				<ol>
+					<li><a href="#xhtm010-ex">Examples</a></li>
+					<li><a href="#xhtm010-reqs">Compliance References</a></li>
+					<li><a href="#xhtm010-res">Resources</a></li>
+					<li><a href="#xhtm010-faq">FAQ</a></li>
+				</ol>
+			</nav>
+		</header>
+		<section id="xhtm010" class="section">
+			<h2>Language</h2>
+
+			<section id="xhtm010-desc" class="usage">
+				<p>Specifying a document's default language &#8212; as well as any changes within the document, such as
+					instances of foreign language terms or dialogue or passages in another language &#8212; helps ensure that
+					assistive technologies can correctly render the text (e.g., that the correct braille characters are
+					presented or a voice capable of rendering the language gets used).</p>
+
+				<p>To define the default language for an XHTML document, the <code>lang</code> and <code>xml:lang</code>
+					language attributes need to be attached to the root <code>html</code> element. The language code defined
+					in these attributes should match one of the language codes specified in a <code>dc:language</code>
+					element in the package document's metadata section (<a href="#xhtm010-faq01">see the faq</a> for more
+					information).</p>
+
+				<p>When attached to elements within the body, the language attributes identify the language of the text
+					content of that element (i.e., to identify a change in language).</p>
+			</section>
+
+			<section id="xhtm010-ex" class="example">
+				<h3>Example</h3>
+
+				<figure id="xhtm010-ex01">
+					<pre class="prettyprint linenums"><code>&lt;html &#8230; lang="en" xml:lang="en">
+   &#8230;
+   &lt;body>
+      &#8230;
+      &lt;p>
+         Harsh gargoyle face that warred against me 
+         over our mess of hash of lights in 
+         &lt;span xml:lang="fr" lang="fr">rue 
+         Saint-André-des-Arts&lt;/span>. In words of
+         words for words, palabras. Oisin with
+         Patrick. Faunman he met in Clamart woods,
+         brandishing a winebottle.
+         &lt;i xml:lang="fr" lang="fr">C'est 
+         vendredi saint!&lt;/i> Murthering Irish.
+         His image, wandering, he met. I mine. I 
+         met a fool i'the forest.
+      &lt;/p>
+      &#8230;
+   &lt;/body>
+&lt;/html></code></pre>
+				</figure>
+			</section>
+
+			<section id="xhtm010-reqs" class="reqs">
+				<h3>Compliance References and Standards</h3>
+
+				<ul>
+					<li>HTML5 &#8212; <a href="http://www.w3.org/TR/html5/dom.html#the-lang-and-xml:lang-attributes">The lang
+							and xml:lang attributes</a></li>
+					<li>WCAG 2.0 &#8212; <a href="http://www.w3.org/TR/WCAG20-TECHS/H57.html">H57: Using language attributes
+							on the html element</a></li>
+					<li>WCAG 2.0 &#8212; <a href="http://www.w3.org/TR/WCAG20-TECHS/H58.html">H58: Using language attributes
+							to identify changes in the human language</a></li>
+				</ul>
+			</section>
+
+			<section id="xhtm010-res" class="res">
+				<h3>Additional Resources</h3>
+				<ul>
+					<li><a href="http://www.w3.org/International/getting-started/language">Language on the Web</a></li>
+					<li><a href="http://www.w3.org/International/articles/language-tags/">Language tags in HTML and
+						xml</a></li>
+					<li><a href="http://www.rfc-editor.org/rfc/rfc5646.txt">RFC5646 &#8212; Tags for Identifying
+							Languages</a></li>
+					<li><a href="http://www.w3.org/International/questions/qa-css-lang#xmllang">Styling using language
+							attributes</a></li>
+				</ul>
+			</section>
+
+			<section id="xhtm010-faq" class="faq">
+				<h3>Frequently Asked Questions</h3>
+
+				<dl class="faq">
+					<dt id="xhtm010-faq01">Is it necessary to specify a default language in content files?</dt>
+					<dd><p>The default language(s) for the publication are formally defined in the package document, but that
+							information may not be available to assistive technologies depending on the reading system used.
+							A cloud reader may only have access to the current XHTML content document, for example, in which
+							case the proper language for braille rendering or TTS playback may not be available.</p>
+						<p>In the case of multilingual publications, it additionally may not be clear to any reading system
+							or assistive technology which of the specified languages in the package document is the correct
+							default for any given content document.</p>
+						<p>Best practice is to always specify the language in each content document to ensure proper
+							rendering.</p></dd>
+					<dt id="xhtm010-faq02">Is it necessary to specify both the <code>lang</code> and <code>xml:lang</code>
+						attributes?</dt>
+					<dd><p>Again, for optimal accessibility both should be specified at this time. Assistive technologies may
+							only recognize one or the other attribute.</p>
+						<p>In addition, if XHTML content documents are rendered as HTML by a reading system, only the
+								<code>lang</code> attribute may be recognized.</p></dd>
+				</dl>
+			</section>
+		</section>
+		<footer>
+			<p>Please ask questions and report any typos, errors and omissions in the <a href="http://idpf.org/forums">IDPF
+					forums</a>.</p>
+			<p>For a list of changes to this site, refer to the <a
+					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
+			<p><a href="http://idpf.org/legal/terms-of-use">Terms of Use</a></p>
+		</footer>
+	</body>
+</html>
