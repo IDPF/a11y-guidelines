@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm040'; $nav=1; $nav_items=array( 'exes','reqs','res','faq','rev'); $category='xhtml'; $page_name='Headings'; ?>
+<?php $id='xhtm040'; $nav=1; $nav_items=array('exes','reqs','res','faq'); $category='xhtml'; $page_name='Headings'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -123,11 +123,6 @@
 					<dd><p>The <code>hgroup</code> element has been removed from HTML 5.0. Its future is uncertain.</p>
 					</dd>
 				</dl>
-			</section>
-			
-			<section id="xhtm040-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

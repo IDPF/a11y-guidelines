@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm095'; $nav=1; $nav_items=array( 'exes','reqs','res','faq','rev'); $category='xhtml'; $page_name='Bibliographies'; ?>
+<?php $id='xhtm095'; $nav=1; $nav_items=array('exes','reqs','res','faq'); $category='xhtml'; $page_name='Bibliographies'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -119,12 +119,7 @@
 					</dd>
 				</dl>
 			</section>
-			
-			<section id="xhtm095-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
-			</section>
-	</section>
+    	</section>
 		
 		<?php include_once('../../includes/footer.php'); ?>
 	</body>

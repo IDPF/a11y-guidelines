@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm065'; $nav=1; $nav_items=array('reqs', 'faq', 'rev'); $category='xhtml'; $page_name='Descriptions'; ?>
+<?php $id='xhtm065'; $nav=1; $nav_items=array('reqs','faq'); $category='xhtml'; $page_name='Descriptions'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -123,11 +123,6 @@
 						limited to being attached to <code>img</code> elements.</p>
 					</dd>
 				</dl>
-			</section>
-			
-			<section id="xhtm065-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

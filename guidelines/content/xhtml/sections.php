@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm035'; $nav=1; $nav_items=array( 'exes','reqs','res','faq','rev'); $category='xhtml'; $page_name='Sections'; ?>
+<?php $id='xhtm035'; $nav=1; $nav_items=array('exes','reqs','res','faq'); $category='xhtml'; $page_name='Sections'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -202,11 +202,6 @@
 							section (e.g., wrapped within <code>span</code> tags to differentiate them visually, if necessary.</p>
 					</dd>
 				</dl>
-			</section>
-			
-			<section id="xhtm035-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='css015'; $nav=1; $nav_items=array('exes','reqs','faq','rev'); $category='style'; $page_name='Hidden Content'; ?>
+<?php $id='css015'; $nav=1; $nav_items=array('exes','reqs','faq'); $category='style'; $page_name='Hidden Content'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -399,11 +399,6 @@ End Module</code></pre>
 							from assistive technologies.</p>
 					</dd>
 				</dl>
-			</section>
-			
-			<section id="css015-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm105'; $nav=1; $nav_items=array( 'ex','reqs','faq','res','rev'); $category='xhtml'; $page_name='Indexes'; ?>
+<?php $id='xhtm105'; $nav=1; $nav_items=array('ex','reqs','faq','res'); $category='xhtml'; $page_name='Indexes'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -117,11 +117,6 @@
 				<ul>
 					<li><a href="">...</a></li>
 				</ul>
-			</section>
-			
-			<section id="xhtm105-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

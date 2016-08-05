@@ -87,8 +87,7 @@ footer {
 	margin-bottom: 0em;
 	margin-left: 1em;
 	padding-bottom: 0.5em;
-	border-top: 3px ridge rgb(150,150,150);
-	background-color: rgb(245,245,245);
+	border-top: 1px ridge rgb(150,150,150);
 }
 
 footer address {

@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='sem005'; $nav=1; $nav_items=array('exes','reqs','faq','rev'); $category='semantics'; $page_name='The epub:type attribute'; ?>
+<?php $id='sem005'; $nav=1; $nav_items=array('exes','reqs','faq'); $category='semantics'; $page_name='The epub:type attribute'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"

@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm042'; $nav=1; $nav_items=array('ex','reqs','res','rev'); $category='xhtml'; $page_name='Bolding and Italics'; ?>
+<?php $id='xhtm042'; $nav=1; $nav_items=array('ex','reqs','res'); $category='xhtml'; $page_name='Bolding and Italics'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -132,11 +132,6 @@
 				<ul>
 					<li><a href="http://accessibility.psu.edu/boldface">Bold and Italic Formatting</a></li>
 				</ul>
-			</section>
-			
-			<section id="xhtm042-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

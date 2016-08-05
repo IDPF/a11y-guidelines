@@ -169,7 +169,6 @@
 					</ol>
 				</li>
 				<li id="glossary"><a class="back" href="content/glossary.php">Glossary</a></li>
-				<li id="revisions"><a class="back" href="content/history.php">Revision History</a></li>
 			</ol>
 		</nav>
 		

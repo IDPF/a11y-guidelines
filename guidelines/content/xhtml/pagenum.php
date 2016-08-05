@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm020'; $nav=1; $nav_items=array('exes','samp','reqs','res','faq','rev'); $category='xhtml'; $page_name='Page Numbers'; ?>
+<?php $id='xhtm020'; $nav=1; $nav_items=array('exes','samp','reqs','res','faq'); $category='xhtml'; $page_name='Page Numbers'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -190,11 +190,6 @@
 						intended to be activated as links, it is semantically incorrect to use them for page breaks.</p>
 					</dd>
 				</dl>
-			</section>
-			
-			<section id="xhtm020-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

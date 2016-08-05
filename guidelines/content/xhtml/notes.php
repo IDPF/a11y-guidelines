@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='xhtm080'; $nav=1; $nav_items=array('exes','reqs','res','rev'); $category='xhtml'; $page_name='Notes'; ?>
+<?php $id='xhtm080'; $nav=1; $nav_items=array('exes','reqs','res'); $category='xhtml'; $page_name='Notes'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -150,11 +150,6 @@ a[epub|type~='noteref'] {
 				<ul>
 					<li>CSS3 &#8212; <a href="http://www.w3.org/TR/css3-namespace/#syntax">CSS Namespaces Module</a></li>
 				</ul>
-			</section>
-			
-			<section id="xhtm080-rev" class="rev">
-				<h3>Revision History</h3>
-				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		
