@@ -43,7 +43,9 @@ print '</nav>';
 	
 $pageNav = '<nav class="pageNav">&#160;';
 
-$spineXML = '/srv/bindings/652ef58e6a3e423f8814f5baee9e8d7a/files/accessibility/guidelines/spine.xml';
+# print getcwd();
+
+$spineXML = '/var/www/vhosts/idpf.org/httpdocs/accessibility/guidelines/spine.xml';
 
 $doc = new DOMDocument;
 $doc->load($spineXML);
