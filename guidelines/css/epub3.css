@@ -38,7 +38,8 @@ h3 {
 	font-size: 120%;
 	color: rgb(0,0,100);
 	margin-top: 1.75em;
-	border-bottom: 1px solid rgb(190,0,0);
+	border-left: 3px solid rgb(190,0,0);
+	padding-left: 0.5em;
 }
 
 
@@ -81,7 +82,7 @@ header h1 {
 footer {
 	font-size: 90%;
 	text-align: center;
-	margin-top: 0.7em;
+	margin-top: 3em;
 	margin-bottom: 0em;
 	margin-left: 1em;
 	padding-bottom: 0.5em;
@@ -246,9 +247,8 @@ section.example > h3 {
 
 pre {
 	font-family: "Courier New", Courier, Monospace;
-	border: solid 0.1em rgb(0,0,255);
+	font-size: 90%;
 	padding: 0em;
-	background-color: rgb(236,246,245);
 	white-space: pre-wrap;
 }
 
@@ -260,9 +260,6 @@ pre ol {
 
 pre > ol > li {
 	padding-left: 0.3em;
-	border-style: solid;
-	border-color: rgb(230,230,230);
-	border-width: 0em 0em 0.1em 0em;
 	background-color: rgb(255,255,255);
 	width: 98%;
 }
