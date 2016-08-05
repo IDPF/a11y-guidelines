@@ -40,6 +40,15 @@
 		<section class="section">
 			<?php include_once('../../includes/page-title.php'); ?>
 			
+			<aside class="note">
+			 <h3>Note</h3>
+			 <p>This checklist is no longer being maintained. Content developers are advised to review the 
+    			<a href="http://www.idpf.org/epub/a11y/">EPUB Accessibility</a> and 
+    			<a href="http://www.idpf.org/epub/a11y/techniques/">Techniques</a> documents for guidance 
+    			on creating accessible EPUB Publications. A conformance checking tool is currently under 
+    			development that will obsolete this checklist. When completed, this page will be removed.</p>
+			</aside>
+			
 			<section class="first">
 				<form action="qa-checklist.php" onsubmit="return validateOptions()" method="post">
 					<p><a href="qa-checklist.php">View complete checklist</a></p>
