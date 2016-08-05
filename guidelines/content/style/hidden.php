@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='css015'; $nav=1; $nav_items=array('exes','reqs','faq'); $category='style'; $page_name='Hidden Content'; ?>
+<?php $id='css015'; $nav=1; $nav_items=array('exes','reqs','faq','rev'); $category='style'; $page_name='Hidden Content'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -59,9 +59,7 @@
 				
 				<p>If content is intended for a specific audience, use the techniques that HTML5 and ARIA make
 					available. Standard hyperlinks to text alternatives, such as transcripts
-					of audio and video tracks, are better than hidden content. And a future <code>aria-describedat</code> 
-					attribute (or EPUB equivalent) will allow descriptions to be attached to any kind of content
-					while living out of band.</p>
+					of audio and video tracks, are more broadly usable than hidden content.</p>
 				
 				<p>There are going to be cases where some content does need to be legitimately hidden, such
 					as when including interactive features and forms.</p>
@@ -70,9 +68,11 @@
 					<a href="../script/pe.php">progressive enhancement</a> techniques have been followed (i.e., the 
 					interactive nature of the content that requires the visibility to change is not an impediment 
 					to consuming the publication).</p>
-				
-				<p>Also ensure that you attach an <code>aria-hidden</code> attribute to hidden elements and maintain
-					its state properly as the content is activated and deactivated.</p>
+					
+				<p>The <code>aria-hidden</code> attribute provides a way to selectively hide visible content from 
+				    an assistive technology, or expose hidden content. Use this attribute with caution, as toggling
+				    content for assistive technologies can have negative effects if not all user groups are taken 
+				    into consideration.</p>
 			</section>
 			
 			<section id="css015-ex" class="example">
@@ -81,7 +81,6 @@
 					<figcaption>Example 1 &#8212; Hiding a form result area</figcaption>
 					<pre class="prettyprint linenums"><code>&lt;div id="result"
      aria-live="assertive"
-     aria-hidden="true"
      hidden="hidden"/></code></pre>
 				</figure>
 				
@@ -239,11 +238,9 @@ function renderExamples() {
 function toggleExample(ex, show) {
   if (show) {
     ex.removeAttribute("hidden");
-    ex.setAttribute("aria-hidden", "false");
   }
   else {
     ex.setAttribute("hidden", "hidden");
-    ex.setAttribute("aria-hidden", "true");
 }
 
 ]]&gt;
@@ -346,11 +343,9 @@ function toggleExample(ex, show) {
 							function toggleExample(ex, show) {
 								if (show) {
 									ex.removeAttribute("hidden");
-									ex.setAttribute("aria-hidden", "false");
 								}
 								else {
 									ex.setAttribute("hidden", "hidden");
-									ex.setAttribute("aria-hidden", "true");
 								}
 							}
 							
@@ -401,11 +396,14 @@ End Module</code></pre>
 							not intended to be rendered as plain old XHTML, except when embedded in the content of a publication 
 							(i.e., it  facilitates two uses, but is not meant to be rendered the same way in both).</p>
 						<p>When rendered as XHTML, the <code>hidden</code> attribute will remove access to the hidden nodes 
-							from assistive technologies, which is why reading system tables of contents should not use simple
-							XHTML rendering. Embedded tables of contents are not how readers are expected to navigate the 
-							document, so in that context the reduced nature is not an issue.</p>
+							from assistive technologies.</p>
 					</dd>
 				</dl>
+			</section>
+			
+			<section id="css015-rev" class="rev">
+				<h3>Revision History</h3>
+				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

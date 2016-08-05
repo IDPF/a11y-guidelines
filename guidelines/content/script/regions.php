@@ -1,5 +1,5 @@
 <?php include_once('../../includes/xml-declaration.php'); ?>
-<?php $id='sc025'; $nav=1; $nav_items=array( 'ex','reqs'); $category='script'; $page_name='Live Regions'; ?>
+<?php $id='sc025'; $nav=1; $nav_items=array('ex','reqs','rev'); $category='script'; $page_name='Live Regions'; ?>
 <!DOCTYPE html>
 <html xml:lang="en" lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
@@ -236,6 +236,11 @@ function checkAnswers() {
 					<li>WAI-ARIA &#8212; <a href="http://www.w3.org/TR/wai-aria/states_and_properties#attrs_liveregions">Live Region Attributes</a></li>
 					<li>WAI-ARIA &#8212; <a href="http://www.w3.org/TR/wai-aria/roles#role_definitions">Definition of Roles</a></li>
 				</ul>
+			</section>
+			
+			<section id="sc025-rev" class="rev">
+				<h3>Revision History</h3>
+				<?php include_once('../../rev/history.php'); ?>
 			</section>
 		</section>
 		

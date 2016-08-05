@@ -25,7 +25,9 @@
 						<li id="whatisepub3"><a href="http://shop.oreilly.com/product/0636920022442.do">What is EPUB 3?</a></li>
 						<li id="accessibleepub3"><a href="http://shop.oreilly.com/product/0636920025283.do">Accessible EPUB 3</a></li>
 						<li id="epub3bestpractices"><a href="http://shop.oreilly.com/product/0636920024897.do">EPUB 3 Best Practices</a></li>
-						<li id="epub3specs"><a href="http://www.idpf.org/epub/latest/">EPUB 3 Specification</a></li>
+						<li id="epub3a11y"><a href="http://www.idpf.org/epub/latest/accessibility">EPUB Accessibility Specification</a></li>
+						<li id="epub3a11ytechs"><a href="http://www.idpf.org/epub/latest/accessibility/techniques">EPUB Accessibility Techniques</a></li>
+						<li id="epub3specs"><a href="http://www.idpf.org/epub3/latest/">EPUB 3 Specification</a></li>
 					</ol>
 				</li>
 				<li id="qa"><span class="nav-h1">Quality Assurance</span>

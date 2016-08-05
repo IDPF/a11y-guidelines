@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <revisions><!-- add all new revisions to the top -->
+	<date date="2016-08-04">
+		<doc docid="css015">
+			<rev>Removed old guidance about <code>aria-describedat</code>.</rev>
+			<rev>Updated incorrect explanation of <code>aria-hidden</code>.</rev>
+			<rev>Removed redunant use of <code>aria-hidden</code> attribute from example.</rev>
+		</doc>
+		<doc docid="site">
+			<rev>Added links to accessibility specification to table of contents.</rev>
+		</doc>
+	</date>
 	<date date="2016-07-18">
 		<doc docid="site">
 			<rev>Removed page on CSS importance rules due to lack of implementable guidelines for content production.</rev>
