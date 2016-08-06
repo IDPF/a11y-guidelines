@@ -3,6 +3,10 @@
 
 /* navigation document styles */
 
+body {
+    max-width: 60em;
+}
+
 nav#toc {
 	margin: 0em;
 	padding: 0em;
@@ -28,10 +32,8 @@ nav ol, nav.toc ol {
 
 ol.sub > li {
 	display: inline-block;
-}
-
-ol.sub > li:not(:first-child):before {
-    content: ' | ';
+	padding-left: 0.5em;
+	width: 15em;
 }
 
 nav[epub|type~='toc'] ol, nav[epub\:type~='toc'] ol, nav.toc ol {
@@ -72,9 +74,13 @@ nav.toc .nav-h1 {
 	font-weight: bold;
 	display: block;
 	padding-top: 0.3em;
-	color: rgb(0,0,130);
+	color: rgb(0,0,160);
 }
 
 a {
 	text-decoration: none;
+}
+
+a:visited {
+	color: rgb(0,0,200);
 }
