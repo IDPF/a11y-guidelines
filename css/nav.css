@@ -26,6 +26,14 @@ nav ol, nav.toc ol {
 	list-style-type: none;
 }
 
+ol.sub > li {
+	display: inline-block;
+}
+
+ol.sub > li:not(:first-child):before {
+    content: ' | ';
+}
+
 nav[epub|type~='toc'] ol, nav[epub\:type~='toc'] ol, nav.toc ol {
 	margin-left: -1em;
 }
