@@ -37,34 +37,26 @@
 			<h2>Headings</h2>
 
 			<section id="xhtm040-desc" class="usage">
-				<p>Headings remain one of the primary means of navigation for users of assistive technologies. Without
-					widespread support for the HTML5 outline algorithm, and with the algorithm at risk of removal from HTML5,
-					headings should be treated as the primary indicator of the structural outline of your content within each
-					content document.</p>
+				<p>Headings remain one of the primary means of navigation for users of assistive technologies.</p>
 
 				<p>Each <code>section</code> should have a numbered heading (e.g., <code>h1</code>) that reflects its level
 					in the document hierarchy, as numbered headings allow assistive technologies, regardless of their support
 					for HTML5, to navigate the document structure.</p>
 
-				<p>Only a single heading should be included in a section. If you need to include subheadings, it is best to
-					incorporate them into the main heading or include them in subsequent paragraphs using a
-						<code>header</code> tag to encapsulate (<a href="#xhtm040-ex03">Example 2</a> shows both usage
-					examples).</p>
+				<p>Each heading element must represent a single heading. Do not break a heading up into separate tags for
+					visual formatting. If you need to include subheadings, incorporate them into the main heading or include
+					them in a subsequent paragraph, using a <code>header</code> tag to encapsulate the full heading (<a
+						href="#xhtm040-ex03">Example 2</a> shows both usage examples).</p>
 
-				<p>If a section does not have a heading, consider including a <code>title</code> or <code>aria-label</code>
-					attribute on the <code>section</code> with the implied nature (e.g., 'chapter' or 'part'). Although it is
-					anticipated that assistive technologies will be able to voice/render the <code>epub:type</code> semantics
-					in such cases, a fallback attribute is prudent at this time. (Note that the <code>title</code> attribute
-					may present a visible tooltip in contexts where the content can be hovered (e.g., by a mouse), whereas
-						<code>aria-label</code> will not.)</p>
+				<p>If a section of text does not have a heading, include a heading in an <code>aria-label</code> attribute on
+					the enclosing element. Assistive technologies will announce this label and alert users that a new section
+					is starting.</p>
 
 				<div epub:type="note">
 					<p class="label">Note</p>
-					<p>It is not recommended that heading elements be used within <code>figure</code>,
-							<code>blockquote</code> and other HTML5 sectioning root elements at this time. Although these
-						headings are technically exempt from the document outline, with only minimal support for the outline
-						algorithm they will be treated as structural headings by assistive technologies, impeding progress
-						through a document.</p>
+					<p>Do not use heading elements within <code>figure</code>, <code>blockquote</code> and other HTML5
+						sectioning root elements. Although these features may have titles, using heading elements will force
+						users to navigate through them to find the next section.</p>
 				</div>
 			</section>
 
@@ -146,20 +138,17 @@
 
 				<dl class="faq">
 					<dt id="xhtm040-faq01">Why not use generic <code>h1</code> headings?</dt>
-					<dd><p>Not all assistive technologies handle HTML5's new allowance that a <code>section</code> can begin
-							anew with an <code>h1</code> heading. It is best to avoid the problems this will cause until it
-							is clearer whether the document outline algorithm will remain a part of HTML5 and what devices
-							support it.</p>
-					</dd>
-					<dt id="xhtm040-faq02">Why not use <code>hgroup</code> for multiple headings?</dt>
-					<dd><p>The <code>hgroup</code> element has been removed from HTML 5.0. Its future is uncertain.</p>
+					<dd><p>Reading systems and assistive technologies do not support the outline algorithm defined in HTML5.
+							If you use an <code>h1</code> heading for every section, they will all appear as top-level
+							headings to a user, impeding their ability to navigate.</p>
 					</dd>
 				</dl>
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

@@ -45,20 +45,13 @@
 				<p>Page break locations can be added to the markup using <code>span</code> and <code>div</code> tags with an
 						<code>epub:type</code> attribute set to the value <code>pagebreak</code>.</p>
 
-				<p>The page number associated with each break point can be represented either as text content of the element
-						(<a href="#xhtm020-ex01">Example 1</a>) or embedded as hidden elements using the <code>title</code>
-					attribute to carry the number (<a href="#xhtm020-ex02">Example 2</a>).</p>
-
 				<p>When including page numbers, a <a href="../nav/pagelist.html"><code>page-list nav</code></a> should also
 					be included to faciliate navigation. The <code>page-list nav</code> is used to look up the location of
 					the page break when the reader requests to move to a specific location. (An <code>id</code> attribute
 					must be attached to each element containing a page number to allow creation of the <code>page-list
 						nav</code>.)</p>
 
-				<p>Do not use CSS styling to hide page numbers, as this practice typically results in the element not being
-					linkable to, which will prevent navigation using the page list.</p>
-
-				<p>When including print pagination references, the package document metadata must also include <a
+				<p>When including print page references, the package document metadata should also include <a
 						href="http://idpf.org/epub3/latest/publications#sec-opf-dcsource">a <code>dc:source</code> element
 						identifying the print source</a>.</p>
 			</section>
@@ -67,16 +60,7 @@
 				<h3>Examples</h3>
 
 				<figure id="xhtm020-ex01">
-					<figcaption>Example 1 &#8212; Page number as content element</figcaption>
-					<pre class="prettyprint linenums"><code>&lt;p>
-   &#8230;
-   &lt;span epub:type="pagebreak" id="page23">23&lt;/span>
-   &#8230;
-&lt;/p></code></pre>
-				</figure>
-
-				<figure id="xhtm020-ex02">
-					<figcaption>Example 2 &#8212; Page number as empty element</figcaption>
+					<figcaption>Example 1 &#8212; Page break marker</figcaption>
 					<pre class="prettyprint linenums"><code>&lt;p>
    &#8230;
    &lt;span
@@ -87,13 +71,8 @@
 &lt;/p></code></pre>
 				</figure>
 
-				<figure id="xhtm020-ex03">
-					<figcaption>Example 3 &#8212; Page number as block element</figcaption>
-					<pre class="prettyprint linenums"><code>&lt;div epub:type="pagebreak" id="page25">25&lt;/div></code></pre>
-				</figure>
-
-				<figure id="xhtm020-ex04">
-					<figcaption>Example 4 &#8212; Package document source declaration</figcaption>
+				<figure id="xhtm020-ex02">
+					<figcaption>Example 2 &#8212; Package document source declaration</figcaption>
 					<pre class="prettyprint linenums"><code>&lt;package&#8230;>
    &#8230;
    &lt;metadata
@@ -164,12 +143,6 @@
 							that mix alphanumeric characters, for example, could not include both visual and aural
 							alternatives.</p>
 					</dd>
-					<dt id="xhtm020-faq02">Do page numbers really matter anymore?</dt>
-					<dd><p>Yes. Despite the assertions of the futurists and technophiles, print still reigns supreme. As a
-							result, anyone in a mixed print/digital environment &#8212; using an assistive technology or not
-							&#8212; needs a way synchronize electronic and print content.</p>
-						<p>Also note that reading is not a solitary activity. From educational settings to reading clubs, the
-							need to coordinate print and digital is very real.</p></dd>
 					<dt id="xhtm020-faq03">Why is the <code>page-list nav</code> necessary?</dt>
 					<dd><p>Although the <a href="../nav/pagelist.html"><code>page-list nav</code></a> provides readers a way
 							to manually look up pages, it is primarily intended to facilitate quick-access through the
@@ -215,8 +188,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

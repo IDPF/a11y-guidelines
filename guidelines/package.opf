@@ -62,7 +62,6 @@
 		<item id="xhtm075" media-type="application/xhtml+xml" href="content/xhtml/video.html" properties="scripted"/>
 		<item id="xhtm080" media-type="application/xhtml+xml" href="content/xhtml/notes.html" properties="scripted"/>
 		<item id="xhtm115" media-type="application/xhtml+xml" href="content/xhtml/annotations.html" properties="scripted"/>
-		<item id="xhtm085" media-type="application/xhtml+xml" href="content/xhtml/code.html" properties="scripted"/>
 		<item id="xhtm090" media-type="application/xhtml+xml" href="content/xhtml/context.html" properties="scripted"/>
 		
 		<item id="xhtm095" media-type="application/xhtml+xml" href="content/xhtml/biblio.html" properties="scripted"/>

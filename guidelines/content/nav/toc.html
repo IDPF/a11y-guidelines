@@ -38,25 +38,21 @@
 			<h2>Table of Contents</h2>
 
 			<section id="nav005-desc" class="usage">
-				<p>Each publication must provide a complete table of contents in the <a
-						href="http://idpf.org/epub3/latest/contentdocs#sec-xhtml-nav">EPUB navigation document</a>, covering
-					all levels of of the document hierarchy (the <code>toc nav</code>).</p>
+				<p>Each publication must provide a table of contents in the <a
+						href="http://idpf.org/epub3/latest/packages#sec-nav">EPUB navigation document</a> (the <code>toc
+						nav</code>).</p>
 
-				<p>The navigation document is one of the two key methods readers use to move around your content, the other
-					being <a href="../xhtml/toc.html">headings</a>. It provides readers easy access to the entire structure
-					of your publication, which simplifies quick traversal and random inspection of the publication.</p>
+				<p>The navigation document is one of the two key methods readers use to move around the content, the other
+					being <a href="../xhtml/toc.html">headings</a>. It provides readers easy access to the major sections of
+					the publication, which simplifies quick traversal and random inspection.</p>
 
-				<p>Navigation components such as the <code>toc nav</code> are constructed using ordered lists
-						(<code>ol</code>). Each list item must either contain a single link (<code>a</code>) to a section of
-					the document, or a link or heading (<code>span</code>) followed by a list of subsections.</p>
+				<p>The table of contents is constructed using ordered lists (<code>ol</code>). Each list item must either
+					contain a single link (<code>a</code>) to a section of the document, or a link or heading
+						(<code>span</code>) followed by a list of subsections.</p>
 
-				<p>If the pronunciation of a link heading may be ambiguous due to embedded images, math content, or other
-					content without intrinsic text, a <code>title</code> attribute must be attached containing an alternate
-					pronunciation.</p>
-
-				<p>To exclude branches of subsection headings from visual rendering, the HTML5 <code>hidden</code> attribute
-					can be attached to the relevant ordered list(s). Reading systems must ensure that these nodes remain
-					accessible to assistive technologies when rendering the table of contents.</p>
+				<p>If the pronunciation of a link will be ambiguous or incomplete due to embedded images, math content, or
+					other content without intrinsic text, a <code>title</code> attribute must be attached containing an
+					alternate pronunciation.</p>
 			</section>
 
 			<section id="nav005-ex" class="example">
@@ -200,46 +196,32 @@
 					<dd><p>Yes, the EPUB navigation document was formulated as an XHTML content document so that it could
 							provide both a declarative table of contents for use by reading systems and also be embeddable as
 							content.</p>
-						<p>See the XHTML Content Documents <a href="../xhtml/toc.html">Table of Contents section</a> for more
-							information.</p>
 					</dd>
 					<dt id="nav005-faq02">Why does EPUB 3 allow NCX files, and do I need to include one?</dt>
-					<dd><p>The NCX file is allowed for forwards compatibility purposes only. Although EPUB 2 reading systems
-							will not be able to handle all the new features in EPUB 3, publications that only employ the
-							basic set of features available in both versions should be able to open on either type of reading
-							system. EPUB 2 reading systems will not accept the new navigation document format, however.</p>
+					<dd><p>The NCX file is allowed for forwards compatibility purposes only. An EPUB 2 reading systems may
+							open an EPUB 3 publication, but it will not be able to use the new navigation document
+							format.</p>
 						<p>You can ignore the NCX file if your book won't render properly as EPUB 2 content, or if you aren't
 							targeting cross-compatibility.</p>
 						<p>Your publication may still open on EPUB 2 reading systems even without an NCX. Some reading
-							systems, like Adobe Digital Editions, will simply not provide table of contents navigation in
-							such cases. Apple iBooks will also reportedly open EPUB 2s without an NCX. But, short of testing
-							every possible reading system there's no blanket statement that can be made about what will
-							happen. Some systems, especially accessible ones, may reject the publication without a means of
-							navigation.</p>
+							systems, like Adobe Digital Editions, will not provide navigation by table of contents but will
+							open the publication.</p>
 					</dd>
-					<dt id="nav005-faq03">Why is rendering the <code>toc nav</code> as an HTML list not
-						accessibility-friendly?</dt>
-					<dd><p>The <code>toc nav</code> was designed to serve a dual role as a declarative table of contents and
-							as a simple list for rendering in the body which is why it is written in HTML, but HTML lists
-							provided limited navigability. It was not designed using the HTML5 grammar rules to be rendered
-							as HTML in both cases.</p>
-						<p>Of all the ways you can bring up a dynamic table of contents and facilitate movement through it, a
-							static list has to be the least imaginative or utile. The table of contents that a reading system
-							provides should allow features like expanding and collapsing branches and moving through the
-							headings by hotkey. These features allow readers who cannot see the table of contents to navigate
-							it with greater ease.</p>
-						<p>When rendering the table of contents, you should also be aware that the EPUB use of the
-								<code>hidden</code> attribute does not perfectly align with the HTML5 specification. An HTML
-							list rendered as HTML will hide these branches even from assistive technologies. For a table of
-							contents in the publication body, a reduced table of contents such as might result is acceptable
-							for all readers. The dynamic table of contents, however, must be able to provide full access.</p>
+					<dt id="nav005-faq03">What does the <code>hidden</code> attribute do?</dt>
+					<dd>
+						<p>The <code>hidden</code> attribute has no effect on the table of contents when used by a reading
+							system to provide navigation. If you re-use the table of contents in the spine, then it is
+							treated as any other XHTML content document. In these cases, the <code>hidden</code> attribute
+							lets you hide navigation components you don't want rendered, like the page list. It can also
+							be used to hide branches of the table of contents.</p>
 					</dd>
 				</dl>
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
