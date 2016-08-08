@@ -36,11 +36,10 @@
 			<h2>Image Maps</h2>
 
 			<section id="xhtm067-desc" class="usage">
-				<p>An image map, as its name suggests, is a kind of context-sensitive image that &#8212; depending on where
-					the reader clicks, touches or otherwise actives it &#8212; results in a unique operation being performed.
-					Image maps are commonly used to make two-dimensional maps dynamic (e.g., to provide information about the
-					country/state/province/region selected), to provide more information about points on an infographic,
-					etc.</p>
+				<p>An image map, as its name suggests, is a kind of context-sensitive image that, depending on where the
+					reader clicks, touches or otherwise actives it, results in a unique operation being performed. Image maps
+					are commonly used to make two-dimensional images dynamic, to provide more information about points on an
+					infographic, etc.</p>
 
 				<p epub:type="bridgehead">Client-side v. Server-side</p>
 
@@ -74,23 +73,18 @@
      src="north-america.png"
      usemap="#na-map"/>
   &lt;map id="na-map">
-     &lt;area href="ca-info.xhtml" alt="Canada"/>
-     &lt;area href="us-info.xhtml" alt="US"/>
-     &lt;area href="mx-info.xhtml" alt="Mexico"/>
+     &lt;area shape="poly" coords="..." href="ca-info.xhtml" alt="Canada"/>
+     &lt;area shape="poly" coords="..." href="us-info.xhtml" alt="US"/>
+     &lt;area shape="poly" coords="..." href="mx-info.xhtml" alt="Mexico"/>
   &lt;/map>
 </code></pre>
 				</figure>
 
 				<figure id="xhtm067-ex02">
 					<figcaption>Example 2 &#8212; A server-side map</figcaption>
-					<pre class="prettyprint linenums"><code>&lt;a href="">&lt;img
+					<pre class="prettyprint linenums"><code>&lt;a href="...">&lt;img
      src="north-america.png"
      ismap="ismap"/>&lt;/a>
-  &lt;map>
-     &lt;a href="ca-info.xhtml">Canada&lt;/a>
-     &lt;a href="us-info.xhtml">US&lt;/a>
-     &lt;a href="mx-info.xhtml">Mexico&lt;/a>
-  &lt;/map>
 </code></pre>
 				</figure>
 			</section>
@@ -122,8 +116,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

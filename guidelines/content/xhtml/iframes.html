@@ -37,29 +37,21 @@
 			<h2>Inline Frames</h2>
 
 			<section id="xhtm110-desc" class="usage">
-				<p>Although HTML5 no longer includes frame sets, inline frames (<code>iframe</code>) are still available for
-					embedding content within a page.</p>
-
 				<p>Inline frames generally integrate well with assistive technologies, but the following accessibility
 					considerations should always be adhered to when using them:</p>
 
 				<ul>
 					<li>Each inline frame should include an explanatory title that clearly indicates the purpose of the
 						embedded content (in a <code>title</code> attribute on the <code>iframe</code> element).</li>
-					<li>If the frame does not contain content for the reader, indicate as much in the <code>title</code>, set
-						its CSS <code>display</code> property to <code>none</code>, and height and width to 0. To ensure that
-						readers cannot tab to the element, set the <code>tabindex</code> attribute to <code>-1</code>.</li>
-					<li>The body of the <code>iframe</code> element should provide a fallback for reading systems that do not
-						support inline frames (e.g., a direct link to the content file).</li>
-					<li>The <code>seamless</code> attribute should be set to <code class="value">true</code> when the content
-						in the frame is intended to be integrated into the page without distinction. When set, the reading
-						system should not announce in speech media that the frame is present, removing a potential nuisance
-						for readers. <span class="atrisk">(Note: this attribute has been marked as at risk for removal from
-							HTML5.)</span></li>
 					<li>When setting the height and width of the <code>iframe</code>, a relative unit such as percentage or
 						ems should be used to facilitate resizing.</li>
 					<li>Scrolling should be set to <code>auto</code> so that if the reader resizes the content in the frame
 						it can still be accessed if it becomes bigger than the available space.</li>
+					<li>The <code>iframe</code> element should provide embedded fallback content for reading systems that do
+						not support inline frames (e.g., a direct link to the content file).</li>
+					<li>If the frame does not contain content for the reader, indicate as much in the <code>title</code>, set
+						its CSS <code>display</code> property to <code>none</code>, and height and width to 0. To ensure that
+						readers cannot tab to the element, set the <code>tabindex</code> attribute to <code>-1</code>.</li>
 				</ul>
 			</section>
 
@@ -71,9 +63,9 @@
         href="quiz01.xhtml"
         title="Quiz 1"
         class="quiz">
-   Your reading system does not support inline 
-   frames or support has been disabled. Please 
-   follow &lt;a href="quiz01.xhtml">this link&lt;/a> 
+   Your reading system does not support
+   inline frames. Please follow &lt;a 
+   href="quiz01.xhtml">this link&lt;/a> 
    to open the associated content document.
 &lt;/iframe></code></pre>
 				</figure>
@@ -122,8 +114,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

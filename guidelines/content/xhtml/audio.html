@@ -36,21 +36,27 @@
 			<h2>Audio</h2>
 
 			<section id="xhtm070-desc" class="usage">
-				<p>When including audio clips, ensure that the native reading system controls are enabled by default. If a
-					reading system supports custom controls, the native controls can be disabled by the JavaScript code.</p>
-
-				<p>The following methods for making audio content accessible are recommended in the HTML5 specification:</p>
-
-				<ul>
-					<li>If captions or a sign language video are available, the <code>video</code> element can be used to
-						play back the clip, allowing users to enable the necessary features.</li>
-					<li>The <code>track</code> element can be used to provide navigation by scene.</li>
-					<li>A link to a transcript can be provided.</li>
-				</ul>
+				<p>When including audio clips, ensure that the native reading system controls are enabled by default (i.e.,
+					by setting the <code>controls</code> attribute on the <code>audio</code> element). This practice ensures
+					that the control are accessible even if scripting is not available. If custom controls are provided and
+					supported by the reading system, the native controls can be disabled by JavaScript.</p>
 
 				<p>Although the <code>audio</code> element allows child content for fallback purposes, such content is not
-					intended to serve as an accessible alternative (it is only made available to the reader if audio is not
-					supported by the reading system).</p>
+					intended to serve as an accessible alternative. It is only made available to the reader if the
+					<code>audio</code> element is not supported by the reading system, which typically only occurs in
+					EPUB 2 reading systems.</p>
+				
+				<p>The following methods for making audio content accessible are instead recommended in the HTML5
+					specification:</p>
+				
+				<ul>
+					<li>Providing navigation by scene using the <code>track</code> element (i.e., using the
+						<code>chapters</code> track type).</li>
+					<li>Providing a link to a transcript.</li>
+					<li>If captions or a sign language video are available, the <code>video</code> element can be used to
+						play back the clip synchronously.</li>
+				</ul>
+				
 			</section>
 
 			<section id="xhtm070-ex" class="example">
@@ -117,6 +123,7 @@
 			</section>
 		</section>
 		<footer>
+			<p>This page last updated August 8, 2016.</p>
 			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
 				typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>

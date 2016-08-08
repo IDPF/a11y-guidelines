@@ -38,29 +38,15 @@
 			<h2>Table of Contents</h2>
 
 			<section id="xhtm030-desc" class="usage">
-				<p>Although the <a href="../nav/toc.html">EPUB navigation document</a> provides full navigation capabilities
-					for the publication as a whole, embedding tables of contents within the body can further facilitate
+				<p>Although the <a href="../nav/toc.html">EPUB navigation document</a> provides navigation capabilities for
+					the publication as a whole, embedding tables of contents within the body can further facilitate
 					comprehension and navigation (e.g., a table of contents in the front matter or a reduced table of
-					contents or mini tables of contents at the start of each section). Embedding can also provide a measure
-					of consistency across reading system implementations, since the rendering of the navigation document may
-					vary from device to device.</p>
-
-				<p>You can re-use the navigation document for your primary table of contents, as the navigation document is a
-					valid XHTML document. It can be included in the <code>spine</code> and rendered as content (see <a
-						href="#xhtm030-ex03">Example 1</a>). CSS styling can be applied to make the table visually
-					appealing.</p>
-
-				<p>If the navigation document contains additional <code>nav</code> types (e.g., a <code>page-list
-					nav</code>), and you don't want those elements rendered in the body, add the <code>hidden</code>
-					attribute to each unwanted list to hide it.</p>
+					contents or mini tables of contents at the start of each section).</p>
 
 				<p>If you embed other tables of contents in the body of your publication, try to construct them in the same
-					way you would the navigation document, using the <code>nav</code> element and ordered lists. Lists
-					simplify access for persons using assistive technologies.</p>
-
-				<p>When including a sectional table of contents, the <code>nav</code> element should be included in a
-						<code>header</code> element with the section's title (see <a href="#xhtm030-ex03">Example 3</a>).</p>
-
+					way as the navigation document &#8212; using the <code>nav</code> element and ordered lists. Lists
+					simplify access as assistive technologies typically provide hotkeys to move through them more
+					effectively.</p>
 			</section>
 
 			<section id="xhtm030-ex" class="example">
@@ -205,8 +191,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
