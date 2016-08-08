@@ -35,13 +35,12 @@
 			<h2>Published Works</h2>
 
 			<section id="xhtm025-desc" class="usage">
-				<p>When including a list of works also by an author (e.g. on the series title page), use either ordered or
-					unordered lists to itemize the entries.</p>
+				<p>When including a list of additional works by an author (e.g. on the series title page), use either ordered
+					or unordered lists to itemize the entries.</p>
 
-				<p>If the list of works conveys information that would be lost if re-ordered (e.g., chronological listing by
-					publication date), use an ordered list to indicate the importance to readers using assistive
-					technologies. If the titles are ordered alphabetically, or in any other general way, use an unordered
-					list.</p>
+				<p>If the list of works conveys information that would be lost if re-ordered (e.g., it represents a
+					chronological listing by publication date), use an ordered list. If the ordering of the titles does
+					not have any particular significance (e.g., alphabetical), use an unordered list.</p>
 
 				<p>The <a href="http://www.daisy.org/z3998/2012/vocab/structure/">Z39.98 Structural Semantics Vocabulary</a>
 					includes a <code class="property">published-works</code> property for identifying the section, but you
@@ -53,10 +52,10 @@
 
 				<p>Simple list of works</p>
 				<pre class="prettyprint linenums"><code>&lt;html &#8230;
-      epub:prefix="z3998:
+      epub:prefix="daisy:
       http://www.daisy.org/z3998/2012/vocab/structure/">
    &#8230;
-   &lt;section epub:type="z3998:published-works">
+   &lt;section epub:type="daisy:published-works">
       &lt;h2>Also by the author&lt;/h2>
       &lt;ul class="works">
          &lt;li>The Tempest&lt;/li>
@@ -67,10 +66,10 @@
 
 				<p>Complex list of works</p>
 				<pre class="prettyprint linenums"><code>&lt;html &#8230;
-      epub:prefix="z3998:
+      epub:prefix="daisy:
       http://www.daisy.org/z3998/2012/vocab/structure/">
    &#8230;
-   &lt;section epub:type="z3998:published-works">
+   &lt;section epub:type="daisy:published-works">
       &lt;h2>Also by the author&lt;/h2>
          
       &lt;section>
@@ -108,8 +107,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

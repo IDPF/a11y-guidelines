@@ -36,27 +36,20 @@
 			<h2>Lists of Illustrations</h2>
 
 			<section id="nav020-desc" class="usage">
-				<p>To facilitate navigation of the content, publications should include a guide to all the illustrations and
-					figures they contain. Without these quick links, there is often no easy way for many readers to locate
-					them again. They instead have to navigate through the content of the book until they reach the
-					location.</p>
+				<p>To facilitate navigation of the content, publications should include a guide to all the illustrations they
+					contain. Without these quick links, there is often no easy way for readers to locate the illustrations
+					again. They instead have to navigate through the content of the book until they reach the location.</p>
 
 				<p>The EPUB navigation document can be used to provide this functionality. A list of illustrations can be
-					defined in the same manner as the table of contents <a href="toc.html">the <code>toc nav</code></a>, but
-					using a <code>nav</code> element with an <code>epub:type</code> attribute with the value <code
-						class="property">loi</code> (see <a href="#nav020-ex01">Example 1</a>). The <code>loi nav</code>
-					should contain only a single ordered list of entries, with each entry linking to a figure or
-					illustration.</p>
+					defined in the same manner as the <a href="toc.html">table of contents</a>, but using a <code>nav</code>
+					element with an <code>epub:type</code> attribute with the value <code class="property">loi</code> (see <a
+						href="#nav020-ex01">Example 1</a>). The <code>loi nav</code> should contain only a single ordered
+					list of entries, with each entry linking to a figure or illustrations.</p>
 
-				<p>Note that although this navigation aid is not formally defined in the EPUB specification, navigation
-					documents were made extensible for this purpose. When creating an <code>loi nav</code>, however, you
-					should also embed the navigation document as content within the publication. Reading systems that
-					minimally comply with the specification may not provide specialized access to an <code>loi
-					nav</code>.</p>
-
-				<p>An entry for the list of illustrations should also be included in <a href="landmarks.html">the
-							<code>landmarks nav</code></a>. If the reading system does not support specialized rendering of
-					the list, a landmarks entry will enable quick reference to the embedded version.</p>
+				<p>Note that although this type of navigation aid is not formally defined in the EPUB specification,
+					navigation documents were made extensible for this purpose. When creating an <code>loi nav</code>, you
+					should also embed the navigation document as content within the publication as Reading systems may not
+					provide specialized access to it.</p>
 			</section>
 
 			<section id="nav020-ex" class="example">
@@ -119,8 +112,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
