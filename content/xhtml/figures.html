@@ -29,7 +29,6 @@
 					<li><a href="#xhtm055-ex">Examples</a></li>
 					<li><a href="#xhtm055-reqs">Compliance References</a></li>
 					<li><a href="#xhtm055-res">Resources</a></li>
-					<li><a href="#xhtm055-faq">FAQ</a></li>
 				</ol>
 			</nav>
 		</header>
@@ -37,23 +36,25 @@
 			<h2>Figures</h2>
 
 			<section id="xhtm055-desc" class="usage">
-				<p>The HTML5 <code>figure</code> element allows readers to skip secondary content and continue reading the
-					primary narrative uninterrupted. Because figures are interspersed within the body, like
-						<code>asides</code>, without being able to clearly identify them the reader would be constantly
-					interrupted at the points where they occur.</p>
+				<p>The HTML5 <code>figure</code> element allows an assistive technology to skip secondary content, thereby
+					enabling readers to continue reading the primary narrative uninterrupted. Because figures are
+					interspersed within the body, like asides, without being able to clearly identify them the reader would
+					be constantly interrupted at the points where they occur.</p>
+
 				<p>The <code>figure</code> element can be used to encapsulate images, tables, code snippets and other content
 					with a related caption, description and/or associated content elements.</p>
-				<p>The element should only be used for secondary content that can be read separately from the main narrative,
-					as its use permits readers to continue with the logical reading order uninterrupted. Do not wrap every
-						<code>img</code> tag in a <code>figure</code>, for example, only the ones that are offset from the
-					narrative.</p>
+
+				<p>The element should only be used for secondary content that can be read separately from the main narrative.
+					Do not wrap every <code>img</code> tag in a <code>figure</code>, for example, only the ones that are
+					offset from the narrative.</p>
+
 				<p>Being able to programmatically determine the caption for a figure is another useful feature introduced in
 					HTML5. As captions are often placed under the content of the figure, readers in the past have often had
-					no context for the figure until reaching the end of it (on top of the abruptness of the figure being
-					forced into the primary narrative).</p>
-				<p>The <code>figcaption</code> element can now be used to mark up the caption, not to be confused with the
-						<code>table</code> element's <code>caption</code>. This element must be the very first or last in the
-						<code>figure</code> to be valid to the HTML5 definition.</p>
+					no context for the figure until reaching the descriptive text that followed the image or table.</p>
+
+				<p>The <code>figcaption</code> element can now be used to mark up the caption. This element must be the very
+					first or last in the <code>figure</code> to be valid to the HTML5 definition.</p>
+
 				<div epub:type="note">
 					<p class="label">Note</p>
 					<p>The <code>details</code> element has been removed from HTML5, but remains under development for HTML
@@ -64,6 +65,7 @@
 
 			<section id="xhtm055-ex" class="example">
 				<h3>Example</h3>
+
 				<figure id="xhtm055-ex01">
 					<figcaption>Example 1 &#8212; Image with caption and description</figcaption>
 					<pre class="prettyprint linenums"><code>&lt;figure>
@@ -143,26 +145,11 @@
 					<li><a href="http://www.html5accessibility.com/tests/figures-nested.html">Use of nested figures</a></li>
 				</ul>
 			</section>
-
-			<section id="xhtm055-faq" class="faq">
-				<h3>Frequently Asked Questions</h3>
-
-				<dl class="faq">
-					<dt id="xhtm055-faq01">Are the <code>figure</code> and <code>figcaption</code> elements supported at this
-						time?</dt>
-					<dd><p>Browser support for the new elements is limited to interpreting them as generic <code>div</code>
-							elements. Although reading systems are not strictly browsers, at this time no accessible systems
-							are available that take advantage of the specialized tagging (e.g., to provide the option to
-							ignore).</p>
-						<p>It is still recommended that these elements be used to tag figures, as it is only a matter of time
-							until accessibility support materializes.</p>
-					</dd>
-				</dl>
-			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

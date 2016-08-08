@@ -28,7 +28,6 @@
 				<ol>
 					<li><a href="#xhtm095-ex">Examples</a></li>
 					<li><a href="#xhtm095-reqs">Compliance References</a></li>
-					<li><a href="#xhtm095-res">Resources</a></li>
 				</ol>
 			</nav>
 		</header>
@@ -110,32 +109,9 @@
 							links to all other Web pages</a></li>
 				</ul>
 			</section>
-
-			<section id="xhtm095-faq" class="faq">
-				<h3>Frequently Asked Questions</h3>
-
-				<dl class="faq">
-					<dt id="xhtm095-faq01">How can I get a hanging indent?</dt>
-					<dd><p>If using an unordered list, first remove any padding or margin from the parent list:</p>
-						<pre class="prettyprint linenums"><code class="language-css">section[epub|type~='bibliography'] ul {
-   list-style-type: none; 
-   margin-left: 0em;
-   padding-left: 0em;
-}</code></pre>
-						<p>You can create the hanging indent by manipulating the list item formatting:</p>
-						<pre class="prettyprint linenums"><code class="language-css">section[epub|type~='bibliography'] li {
-   margin-left: 0em;
-   padding-left: 2.4em;
-   text-indent: -2.4em;
-}</code></pre>
-						<p>Although it's possible to create a hanging indent by using just a negative
-								<code>text-indent</code> on the list items, variations in rendering may affect whether the
-							first line is completely flush left (i.e., there is no common value).</p>
-					</dd>
-				</dl>
-			</section>
 		</section>
 		<footer>
+			<p>This page last updated August 8, 2016.</p>
 			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
 				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>

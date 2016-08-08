@@ -36,47 +36,43 @@
 			<h2>Video</h2>
 
 			<section id="xhtm075-desc" class="usage">
-				<p>When including video clips, ensure that the native reading system controls are enabled by default. If a
-					reading system supports custom controls, the native controls can be disabled by the JavaScript code.</p>
-
-				<p>The following methods for making video content accessible are recommended in the HTML5 specification:</p>
-
-				<ul>
-					<li>The <code>track</code> element can be used to include subtitles, captions and descriptions.</li>
-					<li>Subtitles and captions can be embedded directly in the video.</li>
-					<li>The <code>track</code> element can be used to provide navigation by scene (the <code>chapters</code>
-						track type).</li>
-					<li>A link to a transcript can be provided.</li>
-				</ul>
+				<p>When including video clips, ensure that the native reading system controls are enabled by default (i.e.,
+					by setting the <code>controls</code> attribute on the <code>video</code> element). This practice ensures
+					that the control are accessible even if scripting is not available. If custom controls are provided and
+					supported by the reading system, the native controls can be disabled by JavaScript.</p>
 
 				<p>Although the <code>video</code> element allows child content for fallback purposes, such content is not
-					intended to serve as an accessible alternative (it is only made available to the reader if video is not
-					supported by the reading system).</p>
+					intended to serve as an accessible alternative. It is only made available to the reader if the
+						<code>video</code> element is not supported by the reading system, which typically only occurs in
+					EPUB 2 reading systems.</p>
+
+				<p>The following methods for making video content accessible are instead recommended in the HTML5
+					specification:</p>
+
+				<ul>
+					<li>Using the <code>track</code> element to include subtitles, captions and descriptions.</li>
+					<li>Embedding subtitles and captions directly in the video.</li>
+					<li>Providing navigation by scene using the <code>track</code> element (i.e., using the
+							<code>chapters</code> track type).</li>
+					<li>Providing a link to a transcript.</li>
+				</ul>
 
 				<p>The <code>video</code> element also includes the <code>poster</code> attribute to allow a default image to
-					be set for display while no data is available. This image can also serve as a fallback in EPUB
-					publications when video, or the video format, is not supported. There is currently no way to describe
-					this image, however, so text fallbacks should be preferred. (Discussions are ongoing in the HTML5 Working
-					Group to find ways to redress the problem of video being supported and the poster image conveying
-					additional information of interest to the reader.)</p>
+					be set for display while no data is available. There is currently no way to describe this image, however,
+					so text fallbacks should be preferred.</p>
 
 				<p>Agreement on universal support for a video codec and container could not be reached in HTML5, and is a
 					similar issue for EPUB 3. Although the EPUB 3 specification technically allows any format (without
-					fallback), the IDPF recommends one or both of the following formats be included:</p>
-
-				<ul>
-					<li>H.264</li>
-					<li>WebM</li>
-				</ul>
-
-				<p>While this might not seem like an accessibility issue, consider that it means that many more readers might
-					be relying on fallbacks than you might at first anticipate.</p>
+					fallback), the IDPF recommends one or both of the MP4 and WebM formats be included. While this might not
+					seem like an accessibility issue, consider that it means that many more readers might be relying on
+					fallbacks than you might at first anticipate.</p>
 			</section>
 
 			<section id="xhtm075-ex" class="example">
 				<h3>Examples</h3>
 				<figure id="xhtm075-ex01">
-					<figcaption>Example 1 &#8212; Including a video using the <code>src</code> attribute</figcaption>
+					<figcaption>Example 1 &#8212; Enabling native controls with the <code>controls</code>
+						attribute</figcaption>
 					<pre class="prettyprint linenums"><code>&lt;video
    src="video/the_general.webm"
    controls="controls">
@@ -182,8 +178,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

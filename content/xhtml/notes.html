@@ -28,7 +28,6 @@
 				<ol>
 					<li><a href="#xhtm080-ex">Examples</a></li>
 					<li><a href="#xhtm080-reqs">Compliance References</a></li>
-					<li><a href="#xhtm080-res">Resources</a></li>
 				</ol>
 			</nav>
 		</header>
@@ -36,15 +35,14 @@
 			<h2>Notes</h2>
 
 			<section id="xhtm080-desc" class="usage">
-				<p>Footnotes and endnotes have proven an impediment to the reading experience in the past because they
-					interrup the narrative flow. When footnotes were placed immediately following the paragraph that
-					referenced them, readers had to manually navigate past them each time, as they were typically
-					indistinguishable from text content (e.g., in <code>div</code> or <code>p</code> tags). Even endnotes,
-					grouped at the end of the section, required the user to jump past them.</p>
+				<p>Footnotes and endnotes have proven an impediment to the reading experience because they interrup the
+					narrative flow. When footnotes are placed immediately following the paragraph that references them,
+					readers had to manually navigate past them each time, as they are typically indistinguishable from text
+					content. Even endnotes, grouped at the end of the section, require the user to jump past them.</p>
 
 				<p>The HTML5 structural elements, together with the <code>epub:type</code> attribute, provide a means of
 					alleviating this problem, by clearly marking individual footnotes and endnotes, and sections of them. Not
-					only will this allow accessible reading systems to ignore the notes except when followed from their
+					only does this allow accessible reading systems to ignore the notes except when followed from their
 					referents, but it allows any reading system to handle them more intelligently (e.g., as pop-ups).</p>
 
 				<p>Notes placed within the primary narrative should be tagged using the HTML5 <code>aside</code> element (see
@@ -59,15 +57,13 @@
 				<ul>
 					<li><code class="property">footnote</code> &#8212; a note that would normally be placed at the bottom of
 						a print or electronic page</li>
-					<li><code class="property">rearnote</code> &#8212; a note that would normally be placed at the end of a
+					<li><code class="property">endnote</code> &#8212; a note that would normally be placed at the end of a
 						section or publication</li>
-					<li><code class="property">note</code> &#8212; a note that has no specific spatial display positioning
-						associated with it</li>
 				</ul>
 
 				<p>Notes that are grouped at the end of a section do not need to be individually tagged as
-					<code>aside</code>, but should be grouped in a <code>section</code> carrying the appropriate semantic
-						<code class="property">footnotes</code> or <code class="property">rearnotes</code> (see <a
+					<code>aside</code>, but should be grouped in a <code>section</code> carrying the appropriate <code
+						class="property">footnotes</code> or <code class="property">endnotes</code> semantic (see <a
 						href="#xhtm080-ex02">Example 2</a>). Lists are an effective means of representing groups of notes in
 					these sections, as they allow readers to move through them more effectively (e.g., each list item number
 					will typically correspond sequentially to the contained note number, and readers should have the ability
@@ -77,9 +73,7 @@
 
 				<p>If notes occur in a table, avoid placing them in a <code>tfoot</code> element, as it is intended for
 					summaries of the columns. Footnotes can follow the table or can be grouped together with the table inside
-					a <code>figure</code>.</p>
-
-				<p>See the <a href="tables.html">Tables section</a> for an example.</p>
+					a <code>figure</code>. See the <a href="tables.html">Tables section</a> for an example.</p>
 
 				<p epub:type="bridgehead">Note References</p>
 
@@ -123,10 +117,10 @@
 
 				<figure id="xhtm080-ex02">
 					<figcaption>Example 2 &#8212; Endnote section</figcaption>
-					<pre class="prettyprint linenums"><code>&lt;section epub:type="rearnotes"> 
+					<pre class="prettyprint linenums"><code>&lt;section epub:type="endnotes"> 
    &lt;h2>End Notes&lt;/h2>
    &lt;ol>
-      &lt;li id="en001" epub:type="rearnote">
+      &lt;li id="en001" epub:type="endnote">
          According to the usual nomenclature, the
          branch flowing S.W. is called the Chattooga;
          this unites with the Tallulah to form the 
@@ -150,7 +144,7 @@ a[epub|type~='noteref'] {
 
 				<figure id="xhtm080-ex04">
 					<figcaption>Example 4 &#8212; Back-linking notes</figcaption>
-					<pre class="prettyprint linenums"><code>&lt;li id="en001" epub:type="rearnote">
+					<pre class="prettyprint linenums"><code>&lt;li id="en001" epub:type="endnote">
    &lt;a href="#en01-ref" title="note reference 1">1&lt;/a> 
    According to the usual nomenclature, the &#8230;
 &lt;/li></code></pre>
@@ -170,17 +164,11 @@ a[epub|type~='noteref'] {
 							properties</a></li>
 				</ul>
 			</section>
-
-			<section id="xhtm080-res" class="res">
-				<h3>Additional Resources</h3>
-				<ul>
-					<li>CSS3 &#8212; <a href="http://www.w3.org/TR/css3-namespace/#syntax">CSS Namespaces Module</a></li>
-				</ul>
-			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

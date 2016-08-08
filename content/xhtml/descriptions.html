@@ -37,12 +37,28 @@
 			<section id="xhtm065-desc" class="usage">
 
 				<p>There are many reasons why describing content adds to its accessibility for all readers. Although often
-					misperceived to be useful only for non-visual readers, descriptions facilitate comprehension and provide
-					context for readers with a wide range of needs. They can also assist readers whose first language may not
-					be that of the text being read.</p>
+					considered only useful for non-visual readers, descriptions facilitate comprehension and provide context
+					for readers with a wide range of needs. They can also assist readers whose first language may not be that
+					of the text being read.</p>
 
-				<p>This section reviews the current ARIA solution for attaching descriptions using the
-						<code>aria-describedby</code> attribute.</p>
+				<section id="xhtm065-hyperlinks">
+					<h4><code>hyperlinks</code></h4>
+
+					<p>Plain old hyperlinks remain the most widely accessible way to provide a link to a description.</p>
+
+					<pre class="prettyprint linenums"><code>&lt;figure>
+   &lt;img src="crime-map.jpg" alt="Crime in Gotham City">
+   &lt;a href="crime-desc.xhtml">Description&lt;/a>
+&lt;/figure></code></pre>
+
+					<p>The primary advantage of hyperlinks is that they are exposed to all users, unlike the
+							<code>aria-describedby</code> attribute described in the next section. Their primary disadvantage
+						is that they are always visible, and publishers are often prevented from adding any visble content by
+						their agreements with authors.</p>
+
+					<p>Note that a hyperlink does not always have to reference a description in another document;
+						descriptions might be included at the end of a section, like footnotes.</p>
+				</section>
 
 				<section id="xhtm065-desc-by">
 					<h4><code>aria-describedby</code></h4>
@@ -63,9 +79,8 @@
           each of which &#8230; &lt;/p>
 &lt;/aside></code></pre>
 
-					<p>Note that the ID reference does not include a hash (#) at the start, as the value is not a URI. If the
-						description is spread across multiple elements, the ID of each can be listed in the attribute (this
-						technique is more common for forms element descriptions).</p>
+					<p>Note that the ID reference does not include a hash (#) at the start. If the description is spread
+						across multiple elements, the ID of each can be listed in the attribute.</p>
 
 					<p>It is not required that the element containing the description be visible content. The
 							<code>aria-describedby</code> attribute can point to hidden elements:</p>
@@ -76,46 +91,34 @@
     &#8230;
 &lt;/aside></code></pre>
 
-					<p>Before using hidden content too extensively, the ability to navigate the description is removed when
-						content is not visible, as it no longer has a block or inline context. Hidden descriptions are
-						typically read as one long text string.</p>
+					<p>Before using hidden content too extensively, be aware that the ability to navigate the description is
+						removed when content is not visible. Hidden descriptions are read as one long text string that the
+						user has to listen to in its entirety.</p>
 
 					<p>One of the primary limitations of <code>aria-describedby</code> is that the element containing the
 						description must be present in the same page as the content that is being described, so it is not
-						possible to reference out-of-band descriptions directly. The current workaround to this limitation is
-						to reference the external description through an <code>iframe</code> element:</p>
+						possible to reference out-of-band descriptions directly. The workaround to this limitation is to
+						reference the external description through an <code>iframe</code> element:</p>
 
 					<pre class="prettyprint linenums"><code>&lt;img src="bunny.jpg" aria-describedby="bunny-desc"/>
 
 &lt;iframe id="bunny-desc" src="bunny-description.xhtml" hidden="hidden">&lt;/iframe></code></pre>
 
 					<p>Although using an <code>iframe</code> in this fashion mimics the out-of-band functionality of the
-							<code>longdesc</code> attribute (i.e., that the descriptions can be contained in separate files),
-						there are a number of drawbacks:</p>
+							<code>longdesc</code> attribute, there are a number of drawbacks:</p>
 
 					<ul>
 						<li>There is no way to reference into the content in the <code>iframe</code> from an
-								<code>aria-describedby attribute</code>. In other words, you can reference specific content
-							within the <code>iframe</code>; all content in the <code>iframe</code> will be rendered. Although
-							this won't be problematic if your out-of-band description file only contains a single
-							description, it impedes the ability to use the <a
-								href="http://www.diagramcenter.org/development/content-model.html">DIAGRAM description
-								framework</a>. Without customing handling, all of the descriptions in a DIAGRAM file will be
-							rendered.</li>
+								<code>aria-describedby attribute</code>; all content in the <code>iframe</code> will be
+							read.</li>
 
-						<li>The <code>iframe</code> will normally be announced as a separate document. Although the
-								<code>seamless</code> attribute is designed to stop this behaviour in aural renderings, the
-							attribute is poorly supported and also at risk of removal from HTML5.</li>
+						<li>The <code>iframe</code> will be announced as a separate document.</li>
 
-						<li>The <code>iframe</code> approach also slows down the loading of documents, since each description
-							must be loaded, unlike proper out-of-band linking mechanisms, which allow the content to only be
-							loaded as requested by the reader.</li>
+						<li>Using many <code>iframe</code> elements slows down the loading of documents, since each
+							description must be loaded, unlike proper out-of-band linking mechanisms, which allow the content
+							to only be loaded as requested by the reader.</li>
 					</ul>
-
-					<p>Although the usability of <code>aria-describedby</code> decreases the less simple your description
-						requirements are, it is the most viable solution at this time.</p>
 				</section>
-
 			</section>
 
 			<section id="xhtm065-reqs" class="reqs">
@@ -141,12 +144,21 @@
 						<p>The <code>longdesc</code> attribute is an HTML5 extension not currently supported by EPUB. It is
 							also limited to being attached to <code>img</code> elements.</p>
 					</dd>
+					<dt>Why not <code>aria-details</code>?</dt>
+					<dd>
+						<p>The <code>aria-details</code> attribute is currently under development and not supported by
+							assistive technologies. It will allow an association to be made with a description in a
+								<code>details</code> element. Although similar to <code>aria-describedby</code>, the
+								<code>aria-details</code> attribute will not result in stringified content (i.e., the user
+							will be able to navigate the description as structured HTML).</p>
+					</dd>
 				</dl>
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>

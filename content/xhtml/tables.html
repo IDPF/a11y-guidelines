@@ -103,13 +103,15 @@
 					how the headings are to be announced or rendered to the reader, so care must be taken to ensure logical
 					playback results.</p>
 
-				<p>The ordering does not have to exactly match the markup if another would makes more sense. In the previous
-					example. it will make more sense to the reader to announce "gross sales ultrabooks" than "sales
-					ultrabooks gross".</p>
+				<p>The ordering of the headers does not have to exactly match the markup if another ordering would make more
+					sense. In the previous example. it will make more sense to the reader to announce "gross sales
+					ultrabooks" than "sales ultrabooks gross".</p>
 
 				<p>More generally, whenever there is any ambiguity about which headings apply to a cell, a
 						<code>headers</code> attribute should be attached (e.g., headers at the end of a row, mixed heading
-					rows and columns, etc.). (See <a href="#xhtm045-ex03">Example 3</a>.)</p>
+					rows and columns, etc.). (See <a href="#xhtm045-ex03">Example 3</a>.) Note that HTML5 no longer allows
+					the <code>td</code> element to be used for headings (i.e., a <code>td</code> element cannot be referenced
+					from the <code>headers</code> attribute).</p>
 
 				<p>The <code>scope</code> attribute can also be used to clarify relationships between headers and cells.
 					Whenever the headers are not in the first row or column of a table, this attribute should be attached to
@@ -125,9 +127,6 @@
       &lt;th scope="row">Heading&lt;/th>
    &lt;/tr>
 &lt;/table></code></pre>
-
-				<p>Note that HTML5 no longer allows the <code>td</code> element to be used for headings; <code>td</code>
-					elements also cannot be used in <code>thead</code> rows.</p>
 
 				<p epub:type="bridgehead">Captions and summaries</p>
 
@@ -403,8 +402,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 8, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
