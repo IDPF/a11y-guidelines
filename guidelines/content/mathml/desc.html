@@ -38,64 +38,36 @@
 
 			<section id="math005-desc" class="usage">
 				<p>Although a benefit of native MathML support in XHTML content documents is the ability to provide voicing
-					based on the markup, reading systems capable of such voicings are not likely to appear right away. It is
-					consequently advisable to include a fallback description.</p>
+					based on the markup, reading systems capable of such voicings are rare. It is consequently advisable to
+					include a fallback description.</p>
+
+				<p>A description can be added using the <code>aria-label</code> attribute. The MathML <code>alttext</code>
+					attribute is not recommended, as it has little support in assistive technologies.</p>
 
 				<p>Although natural language descriptions of math equations are a possibility, it is recommended to use <a
 						href="http://www.gh-mathspeak.com/">MathSpeak</a> to write descriptions. Readers already familiar
 					with math-voicing programs will recognize the conventions used in MathSpeak, and the language removes the
 					potential for ambiguity that natural language can introduce.</p>
-
-				<p>Descriptions can be added in one of two ways:</p>
-
-				<ul>
-					<li>using the MathML <code>alttext</code> attribute on the root <code>math</code> element.</li>
-					<li>adding the description to a <code>xml-annotation</code> element.</li>
-				</ul>
-
-				<p>The use of the <code>alttext</code> attribute is only recommended for simple descriptions, since it is
-					limited to 255 text characters. Descriptions that employ the <code>xml-annotation</code> element, on the
-					other hand, are not limited by length and can utilize HTML5 flow content.</p>
 			</section>
 
 			<section id="math005-ex" class="example">
 				<h3>Examples</h3>
 
 				<figure id="math005-ex01">
-					<figcaption>Example 1 &#8212; Adding a description using the <code>alttext</code> attribute</figcaption>
-					<pre class="prettyprint linenums"><code>&lt;m:math
-   xmlns:m="http://www.w3.org/1998/Math/MathML"
-   alttext="Frac Root a EndRoot Over b EndFrac">
-   
-   &lt;m:mfrac>
-      &lt;m:msqrt>
-         &lt;m:mtext>a&lt;/m:mtext>
-      &lt;/m:msqrt>
-      &lt;m:mi>b&lt;/m:mi>
-   &lt;/m:mfrac>
-&lt;/m:math></code></pre>
-				</figure>
-
-				<figure id="math005-ex02">
-					<figcaption>Example 2 &#8212; Adding a description using the <code>annotation-xml</code>
-						element</figcaption>
-					<pre class="prettyprint linenums"><code>&lt;m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
-   &lt;m:semantics>
+					<figcaption>Example 1 &#8212; Adding a description using the <code>aria-label</code>
+						attribute</figcaption>
+					<pre class="prettyprint linenums"><code>&lt;div role="math"
+     aria-label="Frac Root a EndRoot Over b EndFrac">
+   &lt;m:math
+      xmlns:m="http://www.w3.org/1998/Math/MathML">
       &lt;m:mfrac>
          &lt;m:msqrt>
             &lt;m:mtext>a&lt;/m:mtext>
          &lt;/m:msqrt>
          &lt;m:mi>b&lt;/m:mi>
       &lt;/m:mfrac>
-      &lt;m:annotation-xml
-              encoding="application/xhtml+xml"
-              name="alternate-representation">
-         &lt;span xmlns="http://www.w3.org/1999/xhtml">
-            Frac Root a EndRoot Over b EndFrac
-         &lt;/span>
-      &lt;/m:annotation-xml>
-   &lt;/m:semantics>
-&lt;/m:math></code></pre>
+   &lt;/m:math>
+&lt;/div></code></pre>
 				</figure>
 			</section>
 
@@ -160,9 +132,9 @@
 			</section>
 		</section>
 		<footer>
-			<p>This page last updated August 5, 2016.</p>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
+			<p>This page last updated August 10, 2016.</p>
+			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+				report typos, errors and omissions, please open an issue in the <a
 					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
 			<p>For a list of changes to this site, refer to the <a
 					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
