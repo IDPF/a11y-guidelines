@@ -8,9 +8,8 @@ body {
 }
 
 nav#toc {
-	margin: 0em;
+	margin: 2em 0 0 0;
 	padding: 0em;
-	padding-bottom: 0.2em;
 }
 
 nav#toc h2 {
@@ -37,7 +36,7 @@ ol.sub > li {
 }
 
 nav[epub|type~='toc'] ol, nav[epub\:type~='toc'] ol, nav.toc ol {
-	margin-left: -1em;
+	margin-top: 0;
 }
 
 nav[epub|type~='toc'] li, nav[epub\:type~='toc'] li, nav.toc li {
@@ -83,4 +82,9 @@ a {
 
 a:visited {
 	color: rgb(0,0,200);
+}
+
+div#about {
+    margin-left: 1.8em;
+    max-width: 45em;
 }
