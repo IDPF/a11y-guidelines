@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?xml-model href="../../epubcheck/src/main/resources/com/adobe/epubcheck/schema/30/epub-nav-30.rnc" type="application/relax-ng-compact-syntax"?>
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
 
     <head>
@@ -15,7 +16,7 @@
                 <img src="graphics/epub-logo-2.gif" alt="EPUB Logo" class="logo" />
             </div>
             <h1>EPUB 3 Accessibility Guidelines</h1>
-            <div id="about">
+            <div class="about">
                 <p>This guide is a complement the <a href="http://www.idpf.org/epub/a11y/">EPUB Accessibility</a>
                     specification and <a href="http://www.idpf.org/epub/a11y/techniques">techniques</a>. It provides
                     additional explanation of accessible markup practices primarily to help publishers understand the
@@ -30,22 +31,22 @@
                 <li id="accessibleepub3"><a href="http://shop.oreilly.com/product/0636920025283.do">Accessible EPUB 3</a>
                     &#8212; General introduction to accessible publishing.</li>
                 <li id="epub3a11y"><a href="http://www.idpf.org/epub/latest/accessibility">EPUB Accessibility
-                        Specification</a> &#8212; Formal requirements for producing accessible EPUB publications.</li>
+                    Specification</a> &#8212; Formal requirements for producing accessible EPUB publications.</li>
                 <li id="epub3a11ytechs"><a href="http://www.idpf.org/epub/latest/accessibility/techniques">EPUB Accessibility
-                        Techniques</a> &#8212; Techniques for meeting the requirements of the accessibility
+                    Techniques</a> &#8212; Techniques for meeting the requirements of the accessibility
                     specification.</li>
             </ol>
         </nav>
         <nav epub:type="toc" id="toc">
             <h2>Markup Guidelines</h2>
             <ol>
-                <!-- <li id="about" class="first"><a href="content/about.html">About this Guide</a></li>
-				<li id="wcag-aria"><a href="content/wcag-aria.html">EPUB and Web Accessibility</a></li> -->
+                <li id="about" class="first"><a href="content/about.html">About this Guide</a></li>
+                <li id="wcag-aria"><a href="content/wcag-aria.html">EPUB and Web Accessibility</a></li>
                 <li id="checklist-generator"><a
-                        href="http://www.idpf.org/accessibility/guidelines/content/qa/checklist-generator.php">Quality
-                        Assurance Checklist Generator</a></li>
+                    href="http://www.idpf.org/accessibility/guidelines/content/qa/checklist-generator.php">Quality
+                    Assurance Checklist Generator (obsolete)</a></li>
                 <li id="checklist"><a href="http://www.idpf.org/accessibility/guidelines/content/qa/qa-checklist.php">Quality
-                        Assurance Checklist</a></li>
+                    Assurance Checklist (obsolete)</a></li>
                 <li id="semantics"><span class="nav-h1">Semantics</span>
                     <ol class="sub">
                         <li id="reading-order"><a href="content/semantics/order.html">Logical Reading Order</a></li>
