@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta charset="utf-8" />
-		<title>About this Guide | EPUB 3 Accessibilty Guidelines</title>
-		<!--[if lt IE 9]> 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 		<![endif]-->
-		<link type="text/css" rel="stylesheet" href="../css/epub3.css" />
-	</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>About this Guide | EPUB 3 Accessibilty Guidelines</title>
+        <!--[if lt IE 9]> 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 		<![endif]-->
+        <link type="text/css" rel="stylesheet" href="../css/epub3.css" />
+    </head>
 
-	<body>
-		<header>
-			<div class="left">
-				<img src="http://www.idpf.org/sites/idpf.org/files/epub-logo-2.gif" alt="EPUB Logo" class="logo" />
-			</div>
-			<h1><a href="http://www.idpf.org/accessibility/guidelines/">EPUB 3 Accessibility Guidelines</a></h1>
-			<nav class="breadcrumb">
-				<p>Main / About this Guide</p>
-			</nav>
-		</header>
-		<section id="atg" class="section">
-			<h2>About this Guide</h2>
+    <body>
+        <header>
+            <div class="left">
+                <img src="http://www.idpf.org/sites/idpf.org/files/epub-logo-2.gif" alt="EPUB Logo" class="logo" />
+            </div>
+            <h1><a href="http://www.idpf.org/accessibility/guidelines/">EPUB 3 Accessibility Guidelines</a></h1>
+            <nav class="breadcrumb">
+                <p>Main / About this Guide</p>
+            </nav>
+        </header>
+        <section id="atg" class="section">
+            <h2>About this Guide</h2>
 
-			<section class="usage">
-				<p>This guide has been designed to help guide you in the creation of accessible EPUB 3 content. It includes a
-						<a href="qa/qa-checklist.html">quality assurance checklist</a> together with instruction on how to
-					implement the requirements.</p>
+            <section class="usage">
+                <p>Inside any EPUB publication you will find a range of web technologies, but key among them for content
+                    production are XHTML5, SVG, CSS and JavaScript. Creating accessible content using these technologies is
+                    the focus of this guide, and many of the practices outlined in it are drawn from the work of the World
+                    Wide Web Consortium (W3C), the leading authority on accessible web content.</p>
 
-				<p>If you are new to accessible publishing, the best place to start is with the free O'Reilly book <a
-						href="http://shop.oreilly.com/product/0636920025283.do">Accessible EPUB 3</a>, as it will walk you
-					through the basic issues you need to understand in more detail &#8212; and with more of an instructional
-					focus. The <a href="http://shop.oreilly.com/product/0636920024897.do">EPUB 3 Best Practices</a> book
-					includes the information in Accessible EPUB 3 as a chapter, but has also been expanded to include
-					additional information. If you're looking for a more general purpose guide to EPUB 3 production, that
-					also covers accessibility, the Best Practices guide is recommended.</p>
+                <p>The W3C's Web Accessibility Initiative (WAI, pronounced <em>way</em>) maintains two sets of guidelines
+                    covering the creation of accessible web-based content:</p>
 
-				<p>For general how-to questions, please create a new topic in the <a
-						href="http://idpf.org/forums/epub-accessibility">IDPF accessibility discussion forum</a>. Someone
-					will always try to respond!</p>
-			</section>
-		</section>
-		<footer>
-			<p>This page last updated August 5, 2016.</p>
-			<p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br/>To report
-				typos, errors and omissions, please open an issue in the <a
-					href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
-			<p>For a list of changes to this site, refer to the <a
-					href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
-			<p>Download the site as an <a
-					href="http://www.idpf.org/accessibility/guidelines/book/epub3-accessibility-guidelines.epub">EPUB
-					Publication</a>.</p>
-			<p><a href="http://idpf.org/legal/terms-of-use">Terms of Use</a></p>
-		</footer>
-	</body>
+                <dl>
+                    <dt><a href="http://www.w3.org/TR/WCAG/">Web Content Accessibility Guidelines (WCAG) 2.0</a></dt>
+                    <dd>WCAG (pronounced wuh-cag) defines guidelines for the markup and presentation of web content.</dd>
+                    <dt><a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA)
+                        1.0</a></dt>
+                    <dd>WAI-ARIA defines how to create dynamic (scripted) content accessibly.</dd>
+                </dl>
+
+                <p>The goal of this guide is not to attempt to replace, supersede or otherwise override either of those
+                    guidelines, but to function as a means of explaining many of their best practices for EPUB production.
+                    (Note: the guide does not attempt to provide complete coverage of either standard, only practices common
+                    to ebook publishing.)</p>
+
+                <p>Further, subsequent to the original publishing of this guide, the IDPF released the <a
+                        href="http://www.idpf.org/epub/a11y/">EPUB Accessibility</a> specification. This specification
+                    defines formal requirements for producing accessible EPUB publications. The <a
+                        href="http://www.idpf.org/epub/a11y/techniques/">associated techniques</a> explain how to apply WCAG
+                    to EPUB publications. Consequently, while this guide remains a useful source of markup practices, it
+                    should not be read as anything more than that.</p>
+
+                <p>An additional consequence is that the checklist and checkpoints included on this site to help guide
+                    accessible production are now out of date. They highlight some key practices, but are not sufficient for
+                    evaluating publications to the new accessibility specification. These features will be removed once a
+                    formal accessibility checking tool is made available.</p>
+
+                <p>Note that this guide also includes information not found in the WAI guidelines (in particular in WCAG). As
+                    EPUB currently makes use of XML serialization of HTML5, which is still under development, new WCAG
+                    practices have not yet been released to address this content (but the maintainers of this guide are
+                    endeavouring to keep the information consistent with evolving practices). There are also many unique
+                    features to EPUB, such as PLS lexicons and the Navigation Document, that are not specifically addressed
+                    in WCAG or HTML5 at this time. Guidance is continually updated and will be harmonized with future WAI
+                    practices as they evolve.</p>
+
+                <p>If you are new to accessible publishing, the best place to start is with the free O'Reilly book <a
+                        href="http://shop.oreilly.com/product/0636920025283.do">Accessible EPUB 3</a>, as it will walk you
+                    through the basic issues you need to understand in more detail &#8212; and with more of an instructional
+                    focus. The <a href="http://shop.oreilly.com/product/0636920024897.do">EPUB 3 Best Practices</a> book
+                    includes the information in Accessible EPUB 3 as a chapter, but has also been expanded to include
+                    additional information. If you're looking for a more general purpose guide to EPUB 3 production, that
+                    also covers accessibility, the Best Practices guide is recommended.</p>
+
+                <p>For general how-to questions, please create a new topic in the <a
+                        href="http://idpf.org/forums/epub-accessibility">IDPF accessibility discussion forum</a>.</p>
+            </section>
+        </section>
+        <footer>
+            <p>This page last updated May 18, 2017.</p>
+            <p>Please ask questions about these guidelines in the <a href="http://idpf.org/forums">IDPF forums</a>.<br />To
+                report typos, errors and omissions, please open an issue in the <a
+                    href="https://github.com/IDPF/a11y-guidelines/issues">github tracker</a>.</p>
+            <p>For a list of changes to this site, refer to the <a
+                    href="https://github.com/IDPF/a11y-guidelines/commits/master">commit log</a>.</p>
+            <p>Download the site as an <a
+                    href="http://www.idpf.org/accessibility/guidelines/book/epub3-accessibility-guidelines.epub">EPUB
+                    Publication</a>.</p>
+            <p><a href="http://idpf.org/legal/terms-of-use">Terms of Use</a></p>
+        </footer>
+    </body>
 </html>
