@@ -64,60 +64,8 @@
 					<h4><code>aria-describedby</code></h4>
 
 					<p>The <code>aria-describedby</code> attribute can be used to add a description to any HTML5 element, not
-						just <code>img</code>, and is the currently recommended mechanism for referencing descriptions in
-						EPUB 3.</p>
-
-					<p>The attribute references the ID of the element on the page containing the description. For
-						example:</p>
-
-					<pre class="prettyprint linenums"><code>&lt;table aria-describedby="table-desc">
-    &#8230;
-&lt;table>
-
-&lt;aside id="table-desc">
-    &lt;p>The table is composed of three smaller tables
-          each of which &#8230; &lt;/p>
-&lt;/aside></code></pre>
-
-					<p>Note that the ID reference does not include a hash (#) at the start. If the description is spread
-						across multiple elements, the ID of each can be listed in the attribute.</p>
-
-					<p>It is not required that the element containing the description be visible content. The
-							<code>aria-describedby</code> attribute can point to hidden elements:</p>
-
-					<pre class="prettyprint linenums"><code>&lt;img &#8230; aria-describedby="img-desc"/>
-
-&lt;aside id="img-desc" hidden="hidden">
-    &#8230;
-&lt;/aside></code></pre>
-
-					<p>Before using hidden content too extensively, be aware that the ability to navigate the description is
-						removed when content is not visible. Hidden descriptions are read as one long text string that the
-						user has to listen to in its entirety.</p>
-
-					<p>One of the primary limitations of <code>aria-describedby</code> is that the element containing the
-						description must be present in the same page as the content that is being described, so it is not
-						possible to reference out-of-band descriptions directly. The workaround to this limitation is to
-						reference the external description through an <code>iframe</code> element:</p>
-
-					<pre class="prettyprint linenums"><code>&lt;img src="bunny.jpg" aria-describedby="bunny-desc"/>
-
-&lt;iframe id="bunny-desc" src="bunny-description.xhtml" hidden="hidden">&lt;/iframe></code></pre>
-
-					<p>Although using an <code>iframe</code> in this fashion mimics the out-of-band functionality of the
-							<code>longdesc</code> attribute, there are a number of drawbacks:</p>
-
-					<ul>
-						<li>There is no way to reference into the content in the <code>iframe</code> from an
-								<code>aria-describedby attribute</code>; all content in the <code>iframe</code> will be
-							read.</li>
-
-						<li>The <code>iframe</code> will be announced as a separate document.</li>
-
-						<li>Using many <code>iframe</code> elements slows down the loading of documents, since each
-							description must be loaded, unlike proper out-of-band linking mechanisms, which allow the content
-							to only be loaded as requested by the reader.</li>
-					</ul>
+						just <code>img</code>. It is not well supported, however, and is not useful for complex image descriptions
+						as the text it references is flattened to a simple text string.</p>
 				</section>
 			</section>
 
